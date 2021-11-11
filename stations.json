@@ -15,24 +15,9 @@
         "start station longitude":-74.00016545
     },
     {
-        "start station name":"Atlantic Ave & Fort Greene Pl",
-        "start station latitude":40.68382604,
-        "start station longitude":-73.97632328
-    },
-    {
         "start station name":"W 17 St & 8 Ave",
         "start station latitude":40.74177603,
         "start station longitude":-74.00149746
-    },
-    {
-        "start station name":"Park Ave & St Edwards St",
-        "start station latitude":40.69608941,
-        "start station longitude":-73.97803415
-    },
-    {
-        "start station name":"Lexington Ave & Classon Ave",
-        "start station latitude":40.68676793,
-        "start station longitude":-73.95928168
     },
     {
         "start station name":"Barrow St & Hudson St",
@@ -43,16 +28,6 @@
         "start station name":"MacDougal St & Prince St",
         "start station latitude":40.72710258,
         "start station longitude":-74.00297088
-    },
-    {
-        "start station name":"Clinton St & Joralemon St",
-        "start station latitude":40.69239502,
-        "start station longitude":-73.99337909
-    },
-    {
-        "start station name":"Nassau St & Navy St",
-        "start station latitude":40.69839895,
-        "start station longitude":-73.98068914
     },
     {
         "start station name":"Hudson St & Reade St",
@@ -68,11 +43,6 @@
         "start station name":"Cleveland Pl & Spring St",
         "start station latitude":40.7221037867,
         "start station longitude":-73.9972490072
-    },
-    {
-        "start station name":"Henry St & Atlantic Ave",
-        "start station latitude":40.69089272,
-        "start station longitude":-73.99612349
     },
     {
         "start station name":"LaGuardia Pl & W 3 St",
@@ -115,16 +85,6 @@
         "start station longitude":-74.00681753
     },
     {
-        "start station name":"Columbia Heights & Cranberry St",
-        "start station latitude":40.70037867,
-        "start station longitude":-73.99548059
-    },
-    {
-        "start station name":"Old Fulton St",
-        "start station latitude":40.70277159,
-        "start station longitude":-73.99383605
-    },
-    {
         "start station name":"W 13 St & 7 Ave",
         "start station latitude":40.73781509,
         "start station longitude":-73.99994661
@@ -158,36 +118,6 @@
         "start station name":"Bank St & Washington St",
         "start station latitude":40.7361967,
         "start station longitude":-74.00859207
-    },
-    {
-        "start station name":"Willoughby St & Fleet St",
-        "start station latitude":40.69196566,
-        "start station longitude":-73.9813018
-    },
-    {
-        "start station name":"DeKalb Ave & S Portland Ave",
-        "start station latitude":40.68981035,
-        "start station longitude":-73.97493121
-    },
-    {
-        "start station name":"Carlton Ave & Flushing Ave",
-        "start station latitude":40.697787,
-        "start station longitude":-73.973736
-    },
-    {
-        "start station name":"Fulton St & Rockwell Pl",
-        "start station latitude":40.68841,
-        "start station longitude":-73.979458
-    },
-    {
-        "start station name":"Willoughby Ave & Hall St",
-        "start station latitude":40.69196035,
-        "start station longitude":-73.96536851
-    },
-    {
-        "start station name":"Myrtle Ave & St Edwards St",
-        "start station latitude":40.69327018,
-        "start station longitude":-73.97703874
     },
     {
         "start station name":"Perry St & Bleecker St",
@@ -225,11 +155,6 @@
         "start station longitude":-74.00247214
     },
     {
-        "start station name":"DeKalb Ave & Vanderbilt Ave",
-        "start station latitude":40.68940747,
-        "start station longitude":-73.96885458
-    },
-    {
         "start station name":"South St & Whitehall St",
         "start station latitude":40.70122128,
         "start station longitude":-74.01234218
@@ -238,16 +163,6 @@
         "start station name":"Broad St & Bridge St",
         "start station latitude":40.70365182,
         "start station longitude":-74.01167797
-    },
-    {
-        "start station name":"Johnson St & Gold St",
-        "start station latitude":40.69474881,
-        "start station longitude":-73.98362464
-    },
-    {
-        "start station name":"Washington Park",
-        "start station latitude":40.6917823,
-        "start station longitude":-73.9737299
     },
     {
         "start station name":"Maiden Ln & Pearl St",
@@ -270,29 +185,9 @@
         "start station longitude":-73.99973337
     },
     {
-        "start station name":"Adelphi St & Myrtle Ave",
-        "start station latitude":40.69308257,
-        "start station longitude":-73.97178913
-    },
-    {
-        "start station name":"Lafayette Ave & Fort Greene Pl",
-        "start station latitude":40.68691865,
-        "start station longitude":-73.976682
-    },
-    {
-        "start station name":"Washington Ave & Greene Ave",
-        "start station latitude":40.68650065,
-        "start station longitude":-73.96563307
-    },
-    {
         "start station name":"Duane St & Greenwich St",
         "start station latitude":40.71748752,
         "start station longitude":-74.0104554
-    },
-    {
-        "start station name":"Concord St & Bridge St",
-        "start station latitude":40.69766564,
-        "start station longitude":-73.98476437
     },
     {
         "start station name":"Peck Slip & Front St",
@@ -310,11 +205,6 @@
         "start station longitude":-73.97371465
     },
     {
-        "start station name":"Kent Ave & S 11 St",
-        "start station latitude":40.7076449442,
-        "start station longitude":-73.9684152603
-    },
-    {
         "start station name":"Greenwich Ave & 8 Ave",
         "start station latitude":40.7390169121,
         "start station longitude":-74.0026376103
@@ -323,11 +213,6 @@
         "start station name":"Broadway & E 14 St",
         "start station latitude":40.73454567,
         "start station longitude":-73.99074142
-    },
-    {
-        "start station name":"Monroe St & Classon Ave",
-        "start station latitude":40.6845683,
-        "start station longitude":-73.95881081
     },
     {
         "start station name":"Madison St & Montgomery St",
@@ -353,11 +238,6 @@
         "start station name":"E 15 St & 3 Ave",
         "start station latitude":40.734232,
         "start station longitude":-73.986923
-    },
-    {
-        "start station name":"3 Ave & Schermerhorn St",
-        "start station latitude":40.68683208,
-        "start station longitude":-73.9796772
     },
     {
         "start station name":"E 2 St & Avenue B",
@@ -400,11 +280,6 @@
         "start station longitude":-74.013012
     },
     {
-        "start station name":"State St & Smith St",
-        "start station latitude":40.68926942,
-        "start station longitude":-73.98912867
-    },
-    {
         "start station name":"Norfolk St & Broome St",
         "start station latitude":40.7172274,
         "start station longitude":-73.98802084
@@ -413,16 +288,6 @@
         "start station name":"Allen St & Stanton St",
         "start station latitude":40.722055,
         "start station longitude":-73.989111
-    },
-    {
-        "start station name":"Washington Ave & Park Ave",
-        "start station latitude":40.69610226,
-        "start station longitude":-73.96751037
-    },
-    {
-        "start station name":"Cadman Plaza West & Montague St",
-        "start station latitude":40.69383,
-        "start station longitude":-73.990539
     },
     {
         "start station name":"South St & Gouverneur Ln",
@@ -448,21 +313,6 @@
         "start station name":"Leonard St & Church St",
         "start station latitude":40.717571,
         "start station longitude":-74.005549
-    },
-    {
-        "start station name":"Cadman Plaza E & Red Cross Pl",
-        "start station latitude":40.69991755,
-        "start station longitude":-73.98971773
-    },
-    {
-        "start station name":"Lawrence St & Willoughby St",
-        "start station latitude":40.69236178,
-        "start station longitude":-73.98631746
-    },
-    {
-        "start station name":"DeKalb Ave & Hudson Ave",
-        "start station latitude":40.689888,
-        "start station longitude":-73.981013
     },
     {
         "start station name":"E 19 St & 3 Ave",
@@ -540,16 +390,6 @@
         "start station longitude":-73.98016555
     },
     {
-        "start station name":"Clinton Ave & Flushing Ave",
-        "start station latitude":40.69794,
-        "start station longitude":-73.96986848
-    },
-    {
-        "start station name":"Monroe St & Bedford Ave",
-        "start station latitude":40.6851443,
-        "start station longitude":-73.95380904
-    },
-    {
         "start station name":"Bank St & Hudson St",
         "start station latitude":40.73652889,
         "start station longitude":-74.00618026
@@ -573,16 +413,6 @@
         "start station name":"Front St & Maiden Ln",
         "start station latitude":40.70530954,
         "start station longitude":-74.00612572
-    },
-    {
-        "start station name":"S Portland Ave & Hanson Pl",
-        "start station latitude":40.68539567,
-        "start station longitude":-73.97431458
-    },
-    {
-        "start station name":"Emerson Pl & Myrtle Ave",
-        "start station latitude":40.69363137,
-        "start station longitude":-73.96223558
     },
     {
         "start station name":"Bayard St & Baxter St",
@@ -625,21 +455,6 @@
         "start station longitude":-74.01713445
     },
     {
-        "start station name":"Lafayette Ave & Classon Ave",
-        "start station latitude":40.68900443,
-        "start station longitude":-73.96023854
-    },
-    {
-        "start station name":"Fulton St & Grand Ave",
-        "start station latitude":40.68223166,
-        "start station longitude":-73.9614583
-    },
-    {
-        "start station name":"Clinton Ave & Myrtle Ave",
-        "start station latitude":40.693261,
-        "start station longitude":-73.968896
-    },
-    {
         "start station name":"Carmine St & 6 Ave",
         "start station latitude":40.73038599,
         "start station longitude":-74.00214988
@@ -648,16 +463,6 @@
         "start station name":"Washington Pl & 6 Ave",
         "start station latitude":40.73224119,
         "start station longitude":-74.00026394
-    },
-    {
-        "start station name":"Franklin Ave & Myrtle Ave",
-        "start station latitude":40.6945460872,
-        "start station longitude":-73.9580136538
-    },
-    {
-        "start station name":"Willoughby Ave & Walworth St",
-        "start station latitude":40.69331716,
-        "start station longitude":-73.95381995
     },
     {
         "start station name":"John St & William St",
@@ -710,26 +515,6 @@
         "start station longitude":-74.002950346
     },
     {
-        "start station name":"Broadway & Berry St",
-        "start station latitude":40.71044554,
-        "start station longitude":-73.96525063
-    },
-    {
-        "start station name":"Duffield St & Willoughby St",
-        "start station latitude":40.69221589,
-        "start station longitude":-73.9842844
-    },
-    {
-        "start station name":"Clark St & Henry St",
-        "start station latitude":40.69760127,
-        "start station longitude":-73.99344559
-    },
-    {
-        "start station name":"Jay St & Tech Pl",
-        "start station latitude":40.695065,
-        "start station longitude":-73.987167
-    },
-    {
         "start station name":"E 5 St & Avenue C",
         "start station latitude":40.72299208,
         "start station longitude":-73.97995466
@@ -738,26 +523,6 @@
         "start station name":"E 9 St & Avenue C",
         "start station latitude":40.72521311,
         "start station longitude":-73.97768752
-    },
-    {
-        "start station name":"Lefferts Pl & Franklin Ave",
-        "start station latitude":40.680342423,
-        "start station longitude":-73.9557689392
-    },
-    {
-        "start station name":"Fulton St & Clermont Ave",
-        "start station latitude":40.68415748,
-        "start station longitude":-73.96922273
-    },
-    {
-        "start station name":"Atlantic Ave & Furman St",
-        "start station latitude":40.69165183,
-        "start station longitude":-73.9999786
-    },
-    {
-        "start station name":"Lafayette Ave & St James Pl",
-        "start station latitude":40.68851534,
-        "start station longitude":-73.9647628
     },
     {
         "start station name":"Pitt St & Stanton St",
@@ -785,11 +550,6 @@
         "start station longitude":-74.008119
     },
     {
-        "start station name":"Hicks St & Montague St",
-        "start station latitude":40.69512845,
-        "start station longitude":-73.99595065
-    },
-    {
         "start station name":"Market St & Cherry St",
         "start station latitude":40.71076228,
         "start station longitude":-73.99400398
@@ -810,44 +570,14 @@
         "start station longitude":-73.99422366
     },
     {
-        "start station name":"Pearl St & Anchorage Pl",
-        "start station latitude":40.70281858,
-        "start station longitude":-73.98765762
-    },
-    {
         "start station name":"Pearl St & Hanover Square",
         "start station latitude":40.7047177,
         "start station longitude":-74.00926027
     },
     {
-        "start station name":"Cumberland St & Lafayette Ave",
-        "start station latitude":40.68753406,
-        "start station longitude":-73.97265183
-    },
-    {
         "start station name":"Barclay St & Church St",
         "start station latitude":40.71291224,
         "start station longitude":-74.01020234
-    },
-    {
-        "start station name":"Front St & Gold St",
-        "start station latitude":40.70224,
-        "start station longitude":-73.982578
-    },
-    {
-        "start station name":"Carlton Ave & Park Ave",
-        "start station latitude":40.69580705,
-        "start station longitude":-73.97355569
-    },
-    {
-        "start station name":"Clermont Ave & Lafayette Ave",
-        "start station latitude":40.68764484,
-        "start station longitude":-73.96968902
-    },
-    {
-        "start station name":"Clermont Ave & Park Ave",
-        "start station latitude":40.69573398,
-        "start station longitude":-73.97129668
     },
     {
         "start station name":"W 59 St & 10 Ave",
@@ -885,16 +615,6 @@
         "start station longitude":-73.99415556
     },
     {
-        "start station name":"Hancock St & Bedford Ave",
-        "start station latitude":40.68216564,
-        "start station longitude":-73.95399026
-    },
-    {
-        "start station name":"Macon St & Nostrand Ave",
-        "start station latitude":40.6809833854,
-        "start station longitude":-73.9500479759
-    },
-    {
         "start station name":"St Marks Pl & 1 Ave",
         "start station latitude":40.72779126,
         "start station longitude":-73.98564945
@@ -918,11 +638,6 @@
         "start station name":"W 27 St & 7 Ave",
         "start station latitude":40.746647,
         "start station longitude":-73.993915
-    },
-    {
-        "start station name":"Bedford Ave & S 9 St",
-        "start station latitude":40.70853074,
-        "start station longitude":-73.96408963
     },
     {
         "start station name":"E 10 St & Avenue A",
@@ -980,11 +695,6 @@
         "start station longitude":-74.007756
     },
     {
-        "start station name":"S 4 St & Wythe Ave",
-        "start station latitude":40.71285887,
-        "start station longitude":-73.96590294
-    },
-    {
         "start station name":"E 20 St & 2 Ave",
         "start station latitude":40.73587678,
         "start station longitude":-73.98205027
@@ -1005,11 +715,6 @@
         "start station longitude":-73.99144871
     },
     {
-        "start station name":"Dean St & 4 Ave",
-        "start station latitude":40.68312489,
-        "start station longitude":-73.97895137
-    },
-    {
         "start station name":"Broadway & W 56 St",
         "start station latitude":40.7652654,
         "start station longitude":-73.98192338
@@ -1023,11 +728,6 @@
         "start station name":"W 20 St & 8 Ave",
         "start station latitude":40.74345335,
         "start station longitude":-74.00004031
-    },
-    {
-        "start station name":"Grand St & Havemeyer St",
-        "start station latitude":40.71286844,
-        "start station longitude":-73.95698119
     },
     {
         "start station name":"E 32 St & Park Ave",
@@ -1068,11 +768,6 @@
         "start station name":"W 53 St & 10 Ave",
         "start station latitude":40.76669671,
         "start station longitude":-73.99061728
-    },
-    {
-        "start station name":"S 3 St & Bedford Ave",
-        "start station latitude":40.71260486,
-        "start station longitude":-73.96264403
     },
     {
         "start station name":"W 15 St & 7 Ave",
@@ -1275,11 +970,6 @@
         "start station longitude":-73.99266288
     },
     {
-        "start station name":"S 5 Pl & S 5 St",
-        "start station latitude":40.710451,
-        "start station longitude":-73.960876
-    },
-    {
         "start station name":"Broadway & W 38 St",
         "start station latitude":40.75299641,
         "start station longitude":-73.98721619
@@ -1293,11 +983,6 @@
         "start station name":"1 Ave & E 30 St",
         "start station latitude":40.74144387,
         "start station longitude":-73.97536082
-    },
-    {
-        "start station name":"Metropolitan Ave & Bedford Ave",
-        "start station latitude":40.71534825,
-        "start station longitude":-73.96024116
     },
     {
         "start station name":"Lexington Ave & E 29 St",
@@ -1315,24 +1000,9 @@
         "start station longitude":-73.98303529
     },
     {
-        "start station name":"Front St & Washington St",
-        "start station latitude":40.70255088,
-        "start station longitude":-73.98940236
-    },
-    {
-        "start station name":"Wythe Ave & Metropolitan Ave",
-        "start station latitude":40.716887,
-        "start station longitude":-73.963198
-    },
-    {
         "start station name":"1 Ave & E 18 St",
         "start station latitude":40.733812192,
         "start station longitude":-73.9805442095
-    },
-    {
-        "start station name":"Railroad Ave & Kay Ave",
-        "start station latitude":40.70531194,
-        "start station longitude":-73.97100056
     },
     {
         "start station name":"Central Park S & 6 Ave",
@@ -1378,381 +1048,6 @@
         "start station name":"South End Ave & Liberty St",
         "start station latitude":40.711512,
         "start station longitude":-74.015756
-    },
-    {
-        "start station name":"Kent Ave & N 7 St",
-        "start station latitude":40.720367753,
-        "start station longitude":-73.9616507292
-    },
-    {
-        "start station name":"Kingston Ave & Herkimer St",
-        "start station latitude":40.67890679,
-        "start station longitude":-73.94142771
-    },
-    {
-        "start station name":"Fulton St & Utica Ave",
-        "start station latitude":40.6794268,
-        "start station longitude":-73.9298911
-    },
-    {
-        "start station name":"Lewis Ave & Decatur St",
-        "start station latitude":40.6814598,
-        "start station longitude":-73.934903
-    },
-    {
-        "start station name":"Albany Ave & Fulton St",
-        "start station latitude":40.6800105,
-        "start station longitude":-73.938475
-    },
-    {
-        "start station name":"Marcus Garvey Blvd & Macon St",
-        "start station latitude":40.682601,
-        "start station longitude":-73.938037
-    },
-    {
-        "start station name":"Halsey St & Tompkins Ave",
-        "start station latitude":40.6823687,
-        "start station longitude":-73.944118
-    },
-    {
-        "start station name":"Putnam Ave & Nostrand Ave",
-        "start station latitude":40.68402,
-        "start station longitude":-73.94977
-    },
-    {
-        "start station name":"Cambridge Pl & Gates Ave",
-        "start station latitude":40.68488,
-        "start station longitude":-73.96304
-    },
-    {
-        "start station name":"Putnam Ave & Throop Ave",
-        "start station latitude":40.6851532,
-        "start station longitude":-73.94111
-    },
-    {
-        "start station name":"Lewis Ave & Madison St",
-        "start station latitude":40.686312,
-        "start station longitude":-73.935775
-    },
-    {
-        "start station name":"Marcy Ave & Lafayette Ave",
-        "start station latitude":40.6900815,
-        "start station longitude":-73.947915
-    },
-    {
-        "start station name":"Greene Ave & Throop Ave",
-        "start station latitude":40.6894932,
-        "start station longitude":-73.942061
-    },
-    {
-        "start station name":"Greene Ave & Nostrand Ave",
-        "start station latitude":40.6883337,
-        "start station longitude":-73.950916
-    },
-    {
-        "start station name":"Kosciuszko St & Nostrand Ave",
-        "start station latitude":40.69072549,
-        "start station longitude":-73.95133465
-    },
-    {
-        "start station name":"Kosciuszko St & Tompkins Ave",
-        "start station latitude":40.69128258,
-        "start station longitude":-73.9452416
-    },
-    {
-        "start station name":"Lewis Ave & Kosciuszko St",
-        "start station latitude":40.69237074,
-        "start station longitude":-73.93705428
-    },
-    {
-        "start station name":"Pulaski St & Marcus Garvey Blvd",
-        "start station latitude":40.6933982,
-        "start station longitude":-73.939877
-    },
-    {
-        "start station name":"Willoughby Ave & Tompkins Ave",
-        "start station latitude":40.69425403,
-        "start station longitude":-73.94626915
-    },
-    {
-        "start station name":"Throop Ave & Myrtle Ave",
-        "start station latitude":40.69622937,
-        "start station longitude":-73.94371094
-    },
-    {
-        "start station name":"Myrtle Ave & Marcy Ave",
-        "start station latitude":40.69539817,
-        "start station longitude":-73.94954908
-    },
-    {
-        "start station name":"Nostrand Ave & Myrtle Ave",
-        "start station latitude":40.69527008,
-        "start station longitude":-73.95238108
-    },
-    {
-        "start station name":"Myrtle Ave & Lewis Ave",
-        "start station latitude":40.69681963,
-        "start station longitude":-73.93756926
-    },
-    {
-        "start station name":"Union Ave & Wallabout St",
-        "start station latitude":40.70029511,
-        "start station longitude":-73.95032283
-    },
-    {
-        "start station name":"Tompkins Ave & Hopkins St",
-        "start station latitude":40.69957608,
-        "start station longitude":-73.94708417
-    },
-    {
-        "start station name":"Broadway & Whipple St",
-        "start station latitude":40.7016657,
-        "start station longitude":-73.9437303
-    },
-    {
-        "start station name":"Humboldt St & Varet St",
-        "start station latitude":40.7031724,
-        "start station longitude":-73.940636
-    },
-    {
-        "start station name":"Lorimer St & Broadway",
-        "start station latitude":40.70411791,
-        "start station longitude":-73.94818595
-    },
-    {
-        "start station name":"McKibbin St & Manhattan Ave",
-        "start station latitude":40.70510918,
-        "start station longitude":-73.94407279
-    },
-    {
-        "start station name":"Boerum St & Broadway",
-        "start station latitude":40.70538077,
-        "start station longitude":-73.94976519
-    },
-    {
-        "start station name":"Leonard St & Boerum St",
-        "start station latitude":40.70583339,
-        "start station longitude":-73.94644578
-    },
-    {
-        "start station name":"Montrose Ave & Bushwick Ave",
-        "start station latitude":40.70767788,
-        "start station longitude":-73.94016171
-    },
-    {
-        "start station name":"Division Ave & Marcy Ave",
-        "start station latitude":40.70708701,
-        "start station longitude":-73.95796783
-    },
-    {
-        "start station name":"Scholes St & Manhattan Ave",
-        "start station latitude":40.70870368,
-        "start station longitude":-73.9448625
-    },
-    {
-        "start station name":"Stagg St & Union Ave",
-        "start station latitude":40.70877084,
-        "start station longitude":-73.95095259
-    },
-    {
-        "start station name":"Broadway & Roebling St",
-        "start station latitude":40.7092482628,
-        "start station longitude":-73.9606314898
-    },
-    {
-        "start station name":"S 4 St & Rodney St",
-        "start station latitude":40.70934,
-        "start station longitude":-73.95608
-    },
-    {
-        "start station name":"Graham Ave & Grand St",
-        "start station latitude":40.711863,
-        "start station longitude":-73.944024
-    },
-    {
-        "start station name":"Hope St & Union Ave",
-        "start station latitude":40.71167351,
-        "start station longitude":-73.95141312
-    },
-    {
-        "start station name":"Bushwick Ave & Powers St",
-        "start station latitude":40.71247661,
-        "start station longitude":-73.94100005
-    },
-    {
-        "start station name":"Roebling St & N 4 St",
-        "start station latitude":40.71469,
-        "start station longitude":-73.95739
-    },
-    {
-        "start station name":"Graham Ave & Conselyea St",
-        "start station latitude":40.715143,
-        "start station longitude":-73.944507
-    },
-    {
-        "start station name":"Metropolitan Ave & Meeker Ave",
-        "start station latitude":40.71413311,
-        "start station longitude":-73.95234386
-    },
-    {
-        "start station name":"Union Ave & Jackson St",
-        "start station latitude":40.7160751,
-        "start station longitude":-73.952029
-    },
-    {
-        "start station name":"Berry St & N 8 St",
-        "start station latitude":40.7190095,
-        "start station longitude":-73.95852515
-    },
-    {
-        "start station name":"N 6 St & Bedford Ave",
-        "start station latitude":40.71745169,
-        "start station longitude":-73.95850939
-    },
-    {
-        "start station name":"Graham Ave & Withers St",
-        "start station latitude":40.7169811,
-        "start station longitude":-73.94485918
-    },
-    {
-        "start station name":"Graham Ave & Herbert St",
-        "start station latitude":40.71929301,
-        "start station longitude":-73.94500379
-    },
-    {
-        "start station name":"Union Ave & N 12 St",
-        "start station latitude":40.71924,
-        "start station longitude":-73.95242
-    },
-    {
-        "start station name":"Nassau Ave & Newell St",
-        "start station latitude":40.7248125644,
-        "start station longitude":-73.9475262165
-    },
-    {
-        "start station name":"N 12 St & Bedford Ave",
-        "start station latitude":40.72079821,
-        "start station longitude":-73.95484712
-    },
-    {
-        "start station name":"Driggs Ave & Lorimer St",
-        "start station latitude":40.72179134,
-        "start station longitude":-73.9504154
-    },
-    {
-        "start station name":"N 15 St & Wythe Ave",
-        "start station latitude":40.724055,
-        "start station longitude":-73.955736
-    },
-    {
-        "start station name":"Driggs Ave & N Henry St",
-        "start station latitude":40.72325,
-        "start station longitude":-73.94308
-    },
-    {
-        "start station name":"Bedford Ave & Nassau Ave",
-        "start station latitude":40.72311651,
-        "start station longitude":-73.95212324
-    },
-    {
-        "start station name":"Nassau Ave & Russell St",
-        "start station latitude":40.72557,
-        "start station longitude":-73.94434
-    },
-    {
-        "start station name":"Banker St & Meserole Ave",
-        "start station latitude":40.72606,
-        "start station longitude":-73.95621
-    },
-    {
-        "start station name":"Meserole Ave & Manhattan Ave",
-        "start station latitude":40.72708584,
-        "start station longitude":-73.95299117
-    },
-    {
-        "start station name":"Milton St & Franklin St",
-        "start station latitude":40.72906,
-        "start station longitude":-73.95779
-    },
-    {
-        "start station name":"Greenpoint Ave & Manhattan Ave",
-        "start station latitude":40.73026,
-        "start station longitude":-73.95394
-    },
-    {
-        "start station name":"India St & Manhattan Ave",
-        "start station latitude":40.73232194,
-        "start station longitude":-73.9550858
-    },
-    {
-        "start station name":"Huron St & Franklin St",
-        "start station latitude":40.73266,
-        "start station longitude":-73.95826
-    },
-    {
-        "start station name":"Franklin St & Dupont St",
-        "start station latitude":40.73564,
-        "start station longitude":-73.95866
-    },
-    {
-        "start station name":"McGuinness Blvd & Eagle St",
-        "start station latitude":40.73555,
-        "start station longitude":-73.95284
-    },
-    {
-        "start station name":"Vernon Blvd & 50 Ave",
-        "start station latitude":40.74232744,
-        "start station longitude":-73.95411749
-    },
-    {
-        "start station name":"Jackson Ave & 46 Rd",
-        "start station latitude":40.74524768,
-        "start station longitude":-73.94733276
-    },
-    {
-        "start station name":"48 Ave & 5 St",
-        "start station latitude":40.7443632871,
-        "start station longitude":-73.955873251
-    },
-    {
-        "start station name":"31 St & Thomson Ave",
-        "start station latitude":40.74469738,
-        "start station longitude":-73.93540375
-    },
-    {
-        "start station name":"46 Ave & 5 St",
-        "start station latitude":40.74731,
-        "start station longitude":-73.95451
-    },
-    {
-        "start station name":"45 Rd & 11 St",
-        "start station latitude":40.74708586,
-        "start station longitude":-73.94977234
-    },
-    {
-        "start station name":"44 Dr & Jackson Ave",
-        "start station latitude":40.74718234,
-        "start station longitude":-73.9432635
-    },
-    {
-        "start station name":"9 St & 44 Rd",
-        "start station latitude":40.74966,
-        "start station longitude":-73.9521
-    },
-    {
-        "start station name":"21 St & 43 Ave",
-        "start station latitude":40.75052534,
-        "start station longitude":-73.94594845
-    },
-    {
-        "start station name":"Queens Plaza North & Crescent St",
-        "start station latitude":40.75110165,
-        "start station longitude":-73.94073717
-    },
-    {
-        "start station name":"21 St & Queens Plaza North",
-        "start station latitude":40.75325964,
-        "start station longitude":-73.94335788
     },
     {
         "start station name":"E 68 St & 3 Ave",
@@ -1960,19 +1255,9 @@
         "start station longitude":-73.98362492
     },
     {
-        "start station name":"Park Ave & Marcus Garvey Blvd",
-        "start station latitude":40.698617,
-        "start station longitude":-73.941342
-    },
-    {
         "start station name":"Yankee Ferry Terminal",
         "start station latitude":40.686931,
         "start station longitude":-74.016966
-    },
-    {
-        "start station name":"47 Ave & 31 St",
-        "start station latitude":40.743,
-        "start station longitude":-73.93561
     },
     {
         "start station name":"E 55 St & 3 Ave",
@@ -1990,11 +1275,6 @@
         "start station longitude":-73.9659208059
     },
     {
-        "start station name":"Bond St & Fulton St",
-        "start station latitude":40.6896218879,
-        "start station longitude":-73.9830426872
-    },
-    {
         "start station name":"E 48 St & 5 Ave",
         "start station latitude":40.7572456791,
         "start station longitude":-73.9780591428
@@ -2010,16 +1290,6 @@
         "start station longitude":-73.9937996864
     },
     {
-        "start station name":"Monroe St & Tompkins Ave",
-        "start station latitude":40.686203,
-        "start station longitude":-73.944694
-    },
-    {
-        "start station name":"Schermerhorn St & Court St",
-        "start station latitude":40.6910292568,
-        "start station longitude":-73.9918336272
-    },
-    {
         "start station name":"E 58 St & 1 Ave (NE Corner)",
         "start station latitude":40.7589238638,
         "start station longitude":-73.9622622728
@@ -2033,11 +1303,6 @@
         "start station name":"NYCBS DEPOT - DELANCEY",
         "start station latitude":40.7164442313,
         "start station longitude":-73.9823305607
-    },
-    {
-        "start station name":"Verona Pl & Fulton St",
-        "start station latitude":40.680356084,
-        "start station longitude":-73.9476791024
     },
     {
         "start station name":"Soissons Landing",
@@ -2140,24 +1405,9 @@
         "start station longitude":-73.9489196241
     },
     {
-        "start station name":"6 St & 7 Ave",
-        "start station latitude":40.6686627,
-        "start station longitude":-73.97988067
-    },
-    {
-        "start station name":"Warren St & Court St",
-        "start station latitude":40.686371,
-        "start station longitude":-73.99383324
-    },
-    {
         "start station name":"E 98 St & Park Ave",
         "start station latitude":40.78813,
         "start station longitude":-73.95206
-    },
-    {
-        "start station name":"Prospect Park West & 8 St",
-        "start station latitude":40.6651468153,
-        "start station longitude":-73.9763760567
     },
     {
         "start station name":"Columbus Ave & W 95 St",
@@ -2170,24 +1420,9 @@
         "start station longitude":-73.9643412291
     },
     {
-        "start station name":"Butler St & Court St",
-        "start station latitude":40.6849894,
-        "start station longitude":-73.99440329
-    },
-    {
-        "start station name":"6 Ave & 9 St",
-        "start station latitude":40.668127,
-        "start station longitude":-73.98377641
-    },
-    {
         "start station name":"E 91 St & 2 Ave",
         "start station latitude":40.7811222993,
         "start station longitude":-73.9496558905
-    },
-    {
-        "start station name":"10 St & 7 Ave",
-        "start station latitude":40.6662078,
-        "start station longitude":-73.98199886
     },
     {
         "start station name":"West End Ave & W 94 St",
@@ -2195,24 +1430,9 @@
         "start station longitude":-73.974124
     },
     {
-        "start station name":"Kane St & Clinton St",
-        "start station latitude":40.6861758,
-        "start station longitude":-73.99645295
-    },
-    {
         "start station name":"E 97 St & 3 Ave",
         "start station latitude":40.7859201,
         "start station longitude":-73.94860294
-    },
-    {
-        "start station name":"14 St & 7 Ave",
-        "start station latitude":40.663779,
-        "start station longitude":-73.98396846
-    },
-    {
-        "start station name":"Columbia St & Kane St",
-        "start station latitude":40.68763155,
-        "start station longitude":-74.0016256
     },
     {
         "start station name":"1 Ave & E 94 St",
@@ -2220,24 +1440,9 @@
         "start station longitude":-73.94594
     },
     {
-        "start station name":"6 Ave & 12 St",
-        "start station latitude":40.6663181,
-        "start station longitude":-73.9854617
-    },
-    {
         "start station name":"W 95 St & Broadway",
         "start station latitude":40.7937704,
         "start station longitude":-73.971888
-    },
-    {
-        "start station name":"Henry St & Degraw St",
-        "start station latitude":40.6847514,
-        "start station longitude":-73.99917254
-    },
-    {
-        "start station name":"10 St & 5 Ave",
-        "start station latitude":40.6686273,
-        "start station longitude":-73.98700053
     },
     {
         "start station name":"2 Ave & E 96 St",
@@ -2245,39 +1450,14 @@
         "start station longitude":-73.9471673
     },
     {
-        "start station name":"14 St & 5 Ave",
-        "start station latitude":40.666287,
-        "start station longitude":-73.98895053
-    },
-    {
         "start station name":"Central Park West & W 100 St",
         "start station latitude":40.7940666082,
         "start station longitude":-73.9628684521
     },
     {
-        "start station name":"Clinton St & Union St",
-        "start station latitude":40.6831164,
-        "start station longitude":-73.99785267
-    },
-    {
-        "start station name":"12 St & 4 Ave",
-        "start station latitude":40.668603,
-        "start station longitude":-73.9904394
-    },
-    {
         "start station name":"W 106 St & Central Park West",
         "start station latitude":40.7981856,
         "start station longitude":-73.9605909006
-    },
-    {
-        "start station name":"3 Ave & 14 St",
-        "start station latitude":40.6685455,
-        "start station longitude":-73.99333264
-    },
-    {
-        "start station name":"Clinton St & Centre St",
-        "start station latitude":40.67434,
-        "start station longitude":-74.00194698
     },
     {
         "start station name":"3 Ave & E 100 St",
@@ -2290,34 +1470,9 @@
         "start station longitude":-73.9645
     },
     {
-        "start station name":"Degraw St & Smith St",
-        "start station latitude":40.6829151,
-        "start station longitude":-73.99318208
-    },
-    {
-        "start station name":"Henry St & Bay St",
-        "start station latitude":40.6725058,
-        "start station longitude":-74.00494695
-    },
-    {
         "start station name":"Riverside Dr & W 104 St",
         "start station latitude":40.8013434,
         "start station longitude":-73.9711457439
-    },
-    {
-        "start station name":"Degraw St & Hoyt St",
-        "start station latitude":40.6819904427,
-        "start station longitude":-73.9907902479
-    },
-    {
-        "start station name":"Columbia St & Lorraine St",
-        "start station latitude":40.6747055,
-        "start station longitude":-74.0075572
-    },
-    {
-        "start station name":"Union St & 4 Ave",
-        "start station latitude":40.6772744,
-        "start station longitude":-73.98282002
     },
     {
         "start station name":"E 97 St & Madison Ave",
@@ -2325,24 +1480,9 @@
         "start station longitude":-73.953559
     },
     {
-        "start station name":"Dwight St & Van Dyke St",
-        "start station latitude":40.6736355134,
-        "start station longitude":-74.0119555593
-    },
-    {
         "start station name":"2 Ave & E 99 St",
         "start station latitude":40.7862586,
         "start station longitude":-73.94552579
-    },
-    {
-        "start station name":"Berkeley Pl & 6 Ave",
-        "start station latitude":40.6765304,
-        "start station longitude":-73.97846879
-    },
-    {
-        "start station name":"Wolcott St & Dwight St",
-        "start station latitude":40.6753274,
-        "start station longitude":-74.0100698
     },
     {
         "start station name":"Central Park West & W 102 St",
@@ -2350,44 +1490,14 @@
         "start station longitude":-73.96186
     },
     {
-        "start station name":"Pioneer St & Richards St",
-        "start station latitude":40.6777748,
-        "start station longitude":-74.0094613
-    },
-    {
         "start station name":"W 107 St & Columbus Ave",
         "start station latitude":40.7997568,
         "start station longitude":-73.9621128676
     },
     {
-        "start station name":"Pioneer St & Van Brunt St",
-        "start station latitude":40.679043,
-        "start station longitude":-74.011169
-    },
-    {
         "start station name":"Madison Ave & E 99 St",
         "start station latitude":40.7894854155,
         "start station longitude":-73.9524292946
-    },
-    {
-        "start station name":"Berkeley Pl & 7 Ave",
-        "start station latitude":40.6751468387,
-        "start station longitude":-73.9752320945
-    },
-    {
-        "start station name":"Van Brunt St & Wolcott St",
-        "start station latitude":40.6773429,
-        "start station longitude":-74.01275056
-    },
-    {
-        "start station name":"Coffey St & Conover St",
-        "start station latitude":40.677236,
-        "start station longitude":-74.015665
-    },
-    {
-        "start station name":"Grand Army Plaza & Plaza St West",
-        "start station latitude":40.6729679,
-        "start station longitude":-73.97087984
     },
     {
         "start station name":"W 100 St & Broadway",
@@ -2398,16 +1508,6 @@
         "start station name":"E 102 St & 1 Ave",
         "start station latitude":40.7869946,
         "start station longitude":-73.94164802
-    },
-    {
-        "start station name":"Sigourney St & Columbia St",
-        "start station latitude":40.6726724341,
-        "start station longitude":-74.0087952465
-    },
-    {
-        "start station name":"3 St & Prospect Park West",
-        "start station latitude":40.668132,
-        "start station longitude":-73.97363831
     },
     {
         "start station name":"E 66 St & Madison Ave",
@@ -2425,11 +1525,6 @@
         "start station longitude":-73.9664492472
     },
     {
-        "start station name":"Garfield Pl & 8 Ave",
-        "start station latitude":40.6711978,
-        "start station longitude":-73.97484126
-    },
-    {
         "start station name":"E 68 St & Madison Ave",
         "start station latitude":40.7691572,
         "start station longitude":-73.96703464
@@ -2438,11 +1533,6 @@
         "start station name":"Amsterdam Ave & W 79 St",
         "start station latitude":40.7829391,
         "start station longitude":-73.9786517
-    },
-    {
-        "start station name":"Carroll St & 6 Ave",
-        "start station latitude":40.6740886,
-        "start station longitude":-73.9787282
     },
     {
         "start station name":"Madison Ave & E 82 St",
@@ -2455,16 +1545,6 @@
         "start station longitude":-73.95033068
     },
     {
-        "start station name":"Carroll St & 5 Ave",
-        "start station latitude":40.6751622,
-        "start station longitude":-73.9814832
-    },
-    {
-        "start station name":"3 St & 7 Ave",
-        "start station latitude":40.6703837,
-        "start station longitude":-73.97839676
-    },
-    {
         "start station name":"West End Ave & W 107 St",
         "start station latitude":40.8021174,
         "start station longitude":-73.9681805305
@@ -2473,11 +1553,6 @@
         "start station name":"5 Ave & E 103 St",
         "start station latitude":40.7922553,
         "start station longitude":-73.95249933
-    },
-    {
-        "start station name":"5 Ave & 3 St",
-        "start station latitude":40.6728155,
-        "start station longitude":-73.98352355
     },
     {
         "start station name":"E 82 St & East End Ave",
@@ -2495,11 +1570,6 @@
         "start station longitude":-73.95482273
     },
     {
-        "start station name":"3 St & 3 Ave",
-        "start station latitude":40.6750705,
-        "start station longitude":-73.98775226
-    },
-    {
         "start station name":"Central Park North & Adam Clayton Powell Blvd",
         "start station latitude":40.799484,
         "start station longitude":-73.955613
@@ -2515,11 +1585,6 @@
         "start station longitude":-73.9622206986
     },
     {
-        "start station name":"Carroll St & Bond St",
-        "start station latitude":40.6786115,
-        "start station longitude":-73.99037292
-    },
-    {
         "start station name":"E 76 St & Park Ave",
         "start station latitude":40.773763,
         "start station longitude":-73.96222088
@@ -2530,44 +1595,14 @@
         "start station longitude":-73.94755757
     },
     {
-        "start station name":"3 St & Hoyt St",
-        "start station latitude":40.6777287,
-        "start station longitude":-73.99364123
-    },
-    {
-        "start station name":"Carroll St & Smith St",
-        "start station latitude":40.680611,
-        "start station longitude":-73.99475825
-    },
-    {
         "start station name":"Cathedral Pkwy & Broadway",
         "start station latitude":40.804213,
         "start station longitude":-73.96699104
     },
     {
-        "start station name":"Smith St & 3 St",
-        "start station latitude":40.6787242,
-        "start station longitude":-73.99599099
-    },
-    {
-        "start station name":"1 Pl & Clinton St",
-        "start station latitude":40.6809591,
-        "start station longitude":-73.99905709
-    },
-    {
         "start station name":"E 106 St & Madison Ave",
         "start station latitude":40.7934337,
         "start station longitude":-73.94945003
-    },
-    {
-        "start station name":"President St & Henry St",
-        "start station latitude":40.6828003,
-        "start station longitude":-73.99990419
-    },
-    {
-        "start station name":"Carroll St & Columbia St",
-        "start station latitude":40.6830456,
-        "start station longitude":-74.00348559
     },
     {
         "start station name":"E 109 St & 3 Ave",
@@ -2580,149 +1615,9 @@
         "start station longitude":-73.93956237
     },
     {
-        "start station name":"Commerce St & Van Brunt St",
-        "start station latitude":40.6812117,
-        "start station longitude":-74.00860912
-    },
-    {
-        "start station name":"Richards St & Delavan St",
-        "start station latitude":40.6794327,
-        "start station longitude":-74.00785041
-    },
-    {
-        "start station name":"Columbia St & W 9 St",
-        "start station latitude":40.6769993,
-        "start station longitude":-74.00647134
-    },
-    {
-        "start station name":"Henry St & W 9 St",
-        "start station latitude":40.6763744,
-        "start station longitude":-74.00324957
-    },
-    {
-        "start station name":"Clinton St & 4 Place",
-        "start station latitude":40.6783563,
-        "start station longitude":-74.00014502
-    },
-    {
-        "start station name":"Court St & Nelson St",
-        "start station latitude":40.6763947,
-        "start station longitude":-73.99869893
-    },
-    {
-        "start station name":"Smith St & 9 St",
-        "start station latitude":40.6746957,
-        "start station longitude":-73.99785768
-    },
-    {
-        "start station name":"7 St & 3 Ave",
-        "start station latitude":40.6726029815,
-        "start station longitude":-73.9898300171
-    },
-    {
         "start station name":"E 110 St & Madison Ave",
         "start station latitude":40.7961535,
         "start station longitude":-73.94782145
-    },
-    {
-        "start station name":"Court St & State St",
-        "start station latitude":40.6902375,
-        "start station longitude":-73.99203074
-    },
-    {
-        "start station name":"4 Ave & 9 St",
-        "start station latitude":40.6705135,
-        "start station longitude":-73.98876585
-    },
-    {
-        "start station name":"7 St & 5 Ave",
-        "start station latitude":40.6704922,
-        "start station longitude":-73.98541675
-    },
-    {
-        "start station name":"5 St & 6 Ave",
-        "start station latitude":40.6704836,
-        "start station longitude":-73.98208968
-    },
-    {
-        "start station name":"Union St & Nevins St",
-        "start station latitude":40.6790979972,
-        "start station longitude":-73.9876547456
-    },
-    {
-        "start station name":"Congress St & Clinton St",
-        "start station latitude":40.6881529,
-        "start station longitude":-73.99520919
-    },
-    {
-        "start station name":"Bergen St & Smith St",
-        "start station latitude":40.6867443,
-        "start station longitude":-73.99063168
-    },
-    {
-        "start station name":"Dean St & Hoyt St",
-        "start station latitude":40.6864442,
-        "start station longitude":-73.98759104
-    },
-    {
-        "start station name":"Bond St & Bergen St",
-        "start station latitude":40.6849668,
-        "start station longitude":-73.98620772
-    },
-    {
-        "start station name":"Pacific St & Nevins St",
-        "start station latitude":40.6853761,
-        "start station longitude":-73.98302136
-    },
-    {
-        "start station name":"Wyckoff St & 3 Ave",
-        "start station latitude":40.6827549,
-        "start station longitude":-73.98258555
-    },
-    {
-        "start station name":"Bergen St & Flatbush Ave",
-        "start station latitude":40.6809447235,
-        "start station longitude":-73.9756733179
-    },
-    {
-        "start station name":"Prospect Pl & 6 Ave",
-        "start station latitude":40.6793307,
-        "start station longitude":-73.97519523
-    },
-    {
-        "start station name":"7 Ave & Park Pl",
-        "start station latitude":40.6776147,
-        "start station longitude":-73.97324283
-    },
-    {
-        "start station name":"Baltic St & 5 Ave",
-        "start station latitude":40.6795766,
-        "start station longitude":-73.97854971
-    },
-    {
-        "start station name":"Plaza St West & Flatbush Ave",
-        "start station latitude":40.6750207,
-        "start station longitude":-73.97111473
-    },
-    {
-        "start station name":"Douglass St & 4 Ave",
-        "start station latitude":40.6792788,
-        "start station longitude":-73.98154004
-    },
-    {
-        "start station name":"Douglass St & 3 Ave",
-        "start station latitude":40.6802133,
-        "start station longitude":-73.98432695
-    },
-    {
-        "start station name":"Columbia St & Degraw St",
-        "start station latitude":40.6859296,
-        "start station longitude":-74.00242364
-    },
-    {
-        "start station name":"West Drive & Prospect Park West",
-        "start station latitude":40.6610633719,
-        "start station longitude":-73.9794525504
     },
     {
         "start station name":"E 106 St & Lexington Ave",
@@ -2740,21 +1635,6 @@
         "start station longitude":-73.9960098267
     },
     {
-        "start station name":"Hanson Pl & Ashland Pl",
-        "start station latitude":40.6850680731,
-        "start station longitude":-73.977907598
-    },
-    {
-        "start station name":"Richardson St & N Henry St",
-        "start station latitude":40.7190789118,
-        "start station longitude":-73.9422369003
-    },
-    {
-        "start station name":"NYCBS Depot - GOW",
-        "start station latitude":40.669060135,
-        "start station longitude":-73.9946365356
-    },
-    {
         "start station name":"W 88 St & West End Ave",
         "start station latitude":40.7902541733,
         "start station longitude":-73.9771834016
@@ -2770,11 +1650,6 @@
         "start station longitude":-73.9770036936
     },
     {
-        "start station name":"Fulton St & Adams St",
-        "start station latitude":40.6924182926,
-        "start station longitude":-73.989494741
-    },
-    {
         "start station name":"10 Hudson Yards",
         "start station latitude":40.752957,
         "start station longitude":-74.00264
@@ -2783,31 +1658,6 @@
         "start station name":"W 52 St & 6 Ave",
         "start station latitude":40.7613298312,
         "start station longitude":-73.979820013
-    },
-    {
-        "start station name":"Eckford St & Engert Ave",
-        "start station latitude":40.7214625623,
-        "start station longitude":-73.9480090141
-    },
-    {
-        "start station name":"Bayard St & Leonard St",
-        "start station latitude":40.719155717,
-        "start station longitude":-73.94885391
-    },
-    {
-        "start station name":"Devoe St & Lorimer St",
-        "start station latitude":40.7133522622,
-        "start station longitude":-73.9491033554
-    },
-    {
-        "start station name":"Leonard St & Maujer St",
-        "start station latitude":40.7103685424,
-        "start station longitude":-73.9470595121
-    },
-    {
-        "start station name":"Jackson St & Leonard St",
-        "start station latitude":40.7163803197,
-        "start station longitude":-73.948212862
     },
     {
         "start station name":"E 53 St & 3 Ave",
@@ -2830,34 +1680,14 @@
         "start station longitude":-74.0016585588
     },
     {
-        "start station name":"India St & West St",
-        "start station latitude":40.7318140172,
-        "start station longitude":-73.9599502087
-    },
-    {
         "start station name":"W 15 St & 10 Ave",
         "start station latitude":40.7427538287,
         "start station longitude":-74.007473588
     },
     {
-        "start station name":"39 St & 2 Ave - Citi Bike HQ at Industry City",
-        "start station latitude":40.6553997745,
-        "start station longitude":-74.0106278658
-    },
-    {
-        "start station name":"2 Ave & 36 St - Citi Bike HQ at Industry City",
-        "start station latitude":40.6570886667,
-        "start station longitude":-74.0087020397
-    },
-    {
         "start station name":"Picnic Point",
         "start station latitude":40.6851255952,
         "start station longitude":-74.0253531933
-    },
-    {
-        "start station name":"Schermerhorn St & Bond St",
-        "start station latitude":40.6884174275,
-        "start station longitude":-73.984516561
     },
     {
         "start station name":"E 116 St & 2 Ave",
@@ -2970,36 +1800,6 @@
         "start station longitude":-73.9532423
     },
     {
-        "start station name":"27 Ave & 4 St",
-        "start station latitude":40.7747175,
-        "start station longitude":-73.9337894
-    },
-    {
-        "start station name":"21 St & Hoyt Ave S",
-        "start station latitude":40.774645,
-        "start station longitude":-73.923706
-    },
-    {
-        "start station name":"Astoria Park S & Shore Blvd",
-        "start station latitude":40.7767,
-        "start station longitude":-73.927631
-    },
-    {
-        "start station name":"24 Ave & 26 St",
-        "start station latitude":40.774591,
-        "start station longitude":-73.918544
-    },
-    {
-        "start station name":"31 St & Astoria Blvd",
-        "start station latitude":40.7699176,
-        "start station longitude":-73.9184057
-    },
-    {
-        "start station name":"31 St & Hoyt Ave N",
-        "start station latitude":40.7711528,
-        "start station longitude":-73.9170074
-    },
-    {
         "start station name":"Lenox Ave & W 126 St",
         "start station latitude":40.808442,
         "start station longitude":-73.9452087
@@ -3015,39 +1815,9 @@
         "start station longitude":-73.9523
     },
     {
-        "start station name":"37 St & 24 Ave",
-        "start station latitude":40.7701477,
-        "start station longitude":-73.9120938
-    },
-    {
-        "start station name":"24 Ave & 29 St",
-        "start station latitude":40.7729,
-        "start station longitude":-73.916142
-    },
-    {
-        "start station name":"19 St & 24 Ave",
-        "start station latitude":40.7774552,
-        "start station longitude":-73.9225403
-    },
-    {
-        "start station name":"23 Ave & 27 St",
-        "start station latitude":40.776165,
-        "start station longitude":-73.9153175
-    },
-    {
-        "start station name":"31 St & 23 Ave",
-        "start station latitude":40.7747878,
-        "start station longitude":-73.9125551
-    },
-    {
         "start station name":"5 Ave & E 126 St",
         "start station latitude":40.80698,
         "start station longitude":-73.941747
-    },
-    {
-        "start station name":"Steinway St & 23 Ave",
-        "start station latitude":40.7713937,
-        "start station longitude":-73.9077436
     },
     {
         "start station name":"Lenox Ave & W 130 St",
@@ -3055,19 +1825,9 @@
         "start station longitude":-73.9430681
     },
     {
-        "start station name":"Crescent St & Ditmars Blvd",
-        "start station latitude":40.7787185,
-        "start station longitude":-73.9145645
-    },
-    {
         "start station name":"Frederick Douglass Blvd & W 129 St",
         "start station latitude":40.8125511,
         "start station longitude":-73.9492286
-    },
-    {
-        "start station name":"Ditmars Blvd & 19 St",
-        "start station latitude":40.78145,
-        "start station longitude":-73.9183302
     },
     {
         "start station name":"St. Nicholas Ave & W 126 St",
@@ -3088,11 +1848,6 @@
         "start station name":"W 116 St & Broadway",
         "start station latitude":40.8082,
         "start station longitude":-73.9641
-    },
-    {
-        "start station name":"Carlton Ave & Dean St",
-        "start station latitude":40.6809741,
-        "start station longitude":-73.9710097
     },
     {
         "start station name":"W 110 St & Amsterdam Ave",
@@ -3125,29 +1880,14 @@
         "start station longitude":-73.9573645592
     },
     {
-        "start station name":"Underhill Ave & Pacific St",
-        "start station latitude":40.6804836,
-        "start station longitude":-73.9646795
-    },
-    {
         "start station name":"Broadway & W 122 St",
         "start station latitude":40.8120562,
         "start station longitude":-73.9612547
     },
     {
-        "start station name":"Pacific St & Classon Ave",
-        "start station latitude":40.6791944,
-        "start station longitude":-73.9587903
-    },
-    {
         "start station name":"Broadway & Moylan Pl",
         "start station latitude":40.8143256,
         "start station longitude":-73.9590255
-    },
-    {
-        "start station name":"Grand Ave & Bergen St",
-        "start station latitude":40.678045,
-        "start station longitude":-73.962408
     },
     {
         "start station name":"3 Ave & E 112 St",
@@ -3163,336 +1903,6 @@
         "start station name":"Frederick Douglass Blvd & W 112 St",
         "start station latitude":40.801694,
         "start station longitude":-73.957145
-    },
-    {
-        "start station name":"Vernon Blvd & 41 Rd",
-        "start station latitude":40.7552433,
-        "start station longitude":-73.9485678
-    },
-    {
-        "start station name":"28 St & 41 Ave",
-        "start station latitude":40.751047,
-        "start station longitude":-73.93797
-    },
-    {
-        "start station name":"24 St & 41 Ave",
-        "start station latitude":40.7527085,
-        "start station longitude":-73.9397405
-    },
-    {
-        "start station name":"40 Ave & 9 St",
-        "start station latitude":40.75742,
-        "start station longitude":-73.945133
-    },
-    {
-        "start station name":"Bergen St & Vanderbilt Ave",
-        "start station latitude":40.6794388,
-        "start station longitude":-73.9680438
-    },
-    {
-        "start station name":"21 St & 38 Ave",
-        "start station latitude":40.7576314,
-        "start station longitude":-73.9391224
-    },
-    {
-        "start station name":"28 St & 38 Ave",
-        "start station latitude":40.754876,
-        "start station longitude":-73.934326
-    },
-    {
-        "start station name":"37 Ave & 35 St",
-        "start station latitude":40.7531106,
-        "start station longitude":-73.9279917
-    },
-    {
-        "start station name":"Classon Ave & St Marks Ave",
-        "start station latitude":40.6765198,
-        "start station longitude":-73.9596082
-    },
-    {
-        "start station name":"28 St & 36 Ave",
-        "start station latitude":40.757186,
-        "start station longitude":-73.932719
-    },
-    {
-        "start station name":"21 St & 36 Ave",
-        "start station latitude":40.7601853,
-        "start station longitude":-73.9362726
-    },
-    {
-        "start station name":"36 Ave & 10 St",
-        "start station latitude":40.7614376,
-        "start station longitude":-73.9411265
-    },
-    {
-        "start station name":"Crescent St & 35 Ave",
-        "start station latitude":40.7596276,
-        "start station longitude":-73.9321455
-    },
-    {
-        "start station name":"11 St & 35 Ave",
-        "start station latitude":40.7627442,
-        "start station longitude":-73.9391141
-    },
-    {
-        "start station name":"34 St & 35 Ave",
-        "start station latitude":40.7569332,
-        "start station longitude":-73.9262231
-    },
-    {
-        "start station name":"Franklin Ave & St Marks Ave",
-        "start station latitude":40.6758324,
-        "start station longitude":-73.9561677
-    },
-    {
-        "start station name":"35 Ave & 37 St",
-        "start station latitude":40.7557327,
-        "start station longitude":-73.9236611
-    },
-    {
-        "start station name":"Bedford Ave & Bergen St",
-        "start station latitude":40.676368,
-        "start station longitude":-73.952918
-    },
-    {
-        "start station name":"34 Ave & 38 St",
-        "start station latitude":40.756913,
-        "start station longitude":-73.921631
-    },
-    {
-        "start station name":"35 St & 34 Ave",
-        "start station latitude":40.7580583,
-        "start station longitude":-73.9242751
-    },
-    {
-        "start station name":"Prospect Pl & Underhill Ave",
-        "start station latitude":40.6769694,
-        "start station longitude":-73.96579
-    },
-    {
-        "start station name":"Crescent St & 34 Ave",
-        "start station latitude":40.76108,
-        "start station longitude":-73.930562
-    },
-    {
-        "start station name":"Park Pl & Vanderbilt Ave",
-        "start station latitude":40.6767,
-        "start station longitude":-73.969024
-    },
-    {
-        "start station name":"34 Ave & 21 St",
-        "start station latitude":40.7628138,
-        "start station longitude":-73.9342862
-    },
-    {
-        "start station name":"Park Pl & Franklin Ave",
-        "start station latitude":40.6741806,
-        "start station longitude":-73.9564947
-    },
-    {
-        "start station name":"Sterling Pl & Bedford Ave",
-        "start station latitude":40.672695,
-        "start station longitude":-73.954131
-    },
-    {
-        "start station name":"St Johns Pl & Washington Ave",
-        "start station latitude":40.6737236,
-        "start station longitude":-73.9631611
-    },
-    {
-        "start station name":"Underhill Ave & Lincoln Pl",
-        "start station latitude":40.6740123,
-        "start station longitude":-73.9671457
-    },
-    {
-        "start station name":"Lincoln Pl & Classon Ave",
-        "start station latitude":40.6721683,
-        "start station longitude":-73.9609
-    },
-    {
-        "start station name":"Eastern Pkwy & Washington Ave",
-        "start station latitude":40.6716493,
-        "start station longitude":-73.9631145
-    },
-    {
-        "start station name":"Eastern Pkwy & Franklin Ave",
-        "start station latitude":40.6707767,
-        "start station longitude":-73.9576801
-    },
-    {
-        "start station name":"Union St & Bedford Ave",
-        "start station latitude":40.6691783,
-        "start station longitude":-73.9554162
-    },
-    {
-        "start station name":"34 Ave & 13 St",
-        "start station latitude":40.7638753,
-        "start station longitude":-73.9364848
-    },
-    {
-        "start station name":"Carroll St & Washington Ave",
-        "start station latitude":40.6686744,
-        "start station longitude":-73.9618148
-    },
-    {
-        "start station name":"Vernon Blvd & 10 St",
-        "start station latitude":40.7671863,
-        "start station longitude":-73.9373554
-    },
-    {
-        "start station name":"Broadway & 12 St",
-        "start station latitude":40.7668,
-        "start station longitude":-73.9347774
-    },
-    {
-        "start station name":"Carroll St & Franklin Ave",
-        "start station latitude":40.6679411,
-        "start station longitude":-73.9588
-    },
-    {
-        "start station name":"21 St & 31 Dr",
-        "start station latitude":40.7659,
-        "start station longitude":-73.930819
-    },
-    {
-        "start station name":"Crescent St & Broadway",
-        "start station latitude":40.7633589,
-        "start station longitude":-73.9286471
-    },
-    {
-        "start station name":"31 St & Broadway",
-        "start station latitude":40.761584,
-        "start station longitude":-73.925921
-    },
-    {
-        "start station name":"35 St & Broadway",
-        "start station latitude":40.760339,
-        "start station longitude":-73.9222427
-    },
-    {
-        "start station name":"Sullivan Pl & Bedford Ave",
-        "start station latitude":40.6642406,
-        "start station longitude":-73.9574686
-    },
-    {
-        "start station name":"43 St & Broadway",
-        "start station latitude":40.7577284,
-        "start station longitude":-73.9166368
-    },
-    {
-        "start station name":"Newton Rd & 44 St",
-        "start station latitude":40.7595701,
-        "start station longitude":-73.9142678
-    },
-    {
-        "start station name":"Franklin Ave & Empire Blvd",
-        "start station latitude":40.66314,
-        "start station longitude":-73.9605695
-    },
-    {
-        "start station name":"Sterling St & Bedford Ave",
-        "start station latitude":40.6627059,
-        "start station longitude":-73.9569115
-    },
-    {
-        "start station name":"31 Ave & 34 St",
-        "start station latitude":40.763154,
-        "start station longitude":-73.920827
-    },
-    {
-        "start station name":"31 Ave & 30 St",
-        "start station latitude":40.7647,
-        "start station longitude":-73.9240312
-    },
-    {
-        "start station name":"Rogers Ave & Sterling St",
-        "start station latitude":40.6630619,
-        "start station longitude":-73.9538746
-    },
-    {
-        "start station name":"31 Ave & Crescent St",
-        "start station latitude":40.7658346,
-        "start station longitude":-73.9265474
-    },
-    {
-        "start station name":"49 Ave & 21 St",
-        "start station latitude":40.74252,
-        "start station longitude":-73.948852
-    },
-    {
-        "start station name":"31 Ave & 14 St",
-        "start station latitude":40.7682,
-        "start station longitude":-73.9322662
-    },
-    {
-        "start station name":"5 St & 51 Ave",
-        "start station latitude":40.7423737,
-        "start station longitude":-73.9566
-    },
-    {
-        "start station name":"Vernon Blvd & 31 Ave",
-        "start station latitude":40.7692475,
-        "start station longitude":-73.9354504
-    },
-    {
-        "start station name":"Vernon Blvd & 30 Rd",
-        "start station latitude":40.770845,
-        "start station longitude":-73.934171
-    },
-    {
-        "start station name":"Vernon Blvd & 47 Rd",
-        "start station latitude":40.7449067,
-        "start station longitude":-73.9534573
-    },
-    {
-        "start station name":"30 Ave & 21 St",
-        "start station latitude":40.7703743,
-        "start station longitude":-73.9286078
-    },
-    {
-        "start station name":"Center Blvd & 48 Ave",
-        "start station latitude":40.745038,
-        "start station longitude":-73.957539
-    },
-    {
-        "start station name":"Crescent St & 30 Ave",
-        "start station latitude":40.768692,
-        "start station longitude":-73.9249574
-    },
-    {
-        "start station name":"44 Dr & 21 St",
-        "start station latitude":40.748,
-        "start station longitude":-73.9460927
-    },
-    {
-        "start station name":"Steinway St & 28 Ave",
-        "start station latitude":40.7656251,
-        "start station longitude":-73.9136695
-    },
-    {
-        "start station name":"28 Ave & 35 St",
-        "start station latitude":40.7671,
-        "start station longitude":-73.9169858
-    },
-    {
-        "start station name":"27 St & Hunter St",
-        "start station latitude":40.7485,
-        "start station longitude":-73.941275
-    },
-    {
-        "start station name":"Newtown Ave & 23 St",
-        "start station latitude":40.7713615,
-        "start station longitude":-73.9246145
-    },
-    {
-        "start station name":"11 St & 43 Ave",
-        "start station latitude":40.7519071,
-        "start station longitude":-73.9479119
-    },
-    {
-        "start station name":"27 Ave & 9 St",
-        "start station latitude":40.7739825,
-        "start station longitude":-73.9309134
     },
     {
         "start station name":"E 128 St & Madison Ave",
@@ -3520,44 +1930,14 @@
         "start station longitude":-73.9559308
     },
     {
-        "start station name":"Crown St & Bedford Ave",
-        "start station latitude":40.666563,
-        "start station longitude":-73.956741
-    },
-    {
-        "start station name":"Fulton St & Waverly Ave",
-        "start station latitude":40.6832386546,
-        "start station longitude":-73.9659959078
-    },
-    {
         "start station name":"Broadway & W 25 St",
         "start station latitude":40.7428687731,
         "start station longitude":-73.9891862869
     },
     {
-        "start station name":"35 Ave & 10 St",
-        "start station latitude":40.7631548191,
-        "start station longitude":-73.9398550987
-    },
-    {
-        "start station name":"48 Ave & 30 Pl",
-        "start station latitude":40.7412830936,
-        "start station longitude":-73.9372587204
-    },
-    {
-        "start station name":"Flushing Ave & Vanderbilt Ave",
-        "start station latitude":40.6979503157,
-        "start station longitude":-73.9707756042
-    },
-    {
         "start station name":"W 129 St & Convent Ave",
         "start station latitude":40.8143944379,
         "start station longitude":-73.9532473683
-    },
-    {
-        "start station name":"31 St & Northern Blvd",
-        "start station latitude":40.7518695142,
-        "start station longitude":-73.9334928989
     },
     {
         "start station name":"E 2 St & Avenue A",
@@ -3575,24 +1955,9 @@
         "start station longitude":-74.0013849735
     },
     {
-        "start station name":"Montgomery St & Franklin Ave",
-        "start station latitude":40.6664393069,
-        "start station longitude":-73.9605563879
-    },
-    {
-        "start station name":"31 Ave & Steinway St",
-        "start station latitude":40.7612938973,
-        "start station longitude":-73.9169168472
-    },
-    {
         "start station name":"North Moore St & Greenwich St",
         "start station latitude":40.7201952144,
         "start station longitude":-74.0103006363
-    },
-    {
-        "start station name":"Leonard St & Nassau Ave",
-        "start station latitude":40.723956785,
-        "start station longitude":-73.9498436451
     },
     {
         "start station name":"E 81 St & 2 Ave",
@@ -3600,24 +1965,9 @@
         "start station longitude":-73.9542746544
     },
     {
-        "start station name":"Dean St & Franklin Ave",
-        "start station latitude":40.6775920694,
-        "start station longitude":-73.9556372166
-    },
-    {
-        "start station name":"Jay St & York St",
-        "start station latitude":40.7014031726,
-        "start station longitude":-73.9867267013
-    },
-    {
         "start station name":"3 Ave & E 95 St",
         "start station latitude":40.7845967988,
         "start station longitude":-73.9496853948
-    },
-    {
-        "start station name":"Van Brunt St & Van Dyke St",
-        "start station latitude":40.6758329439,
-        "start station longitude":-74.0147262812
     },
     {
         "start station name":"E 43 St & 5 Ave",
@@ -3645,21 +1995,6 @@
         "start station longitude":-74.0093551576
     },
     {
-        "start station name":"28 Ave & 44 St",
-        "start station latitude":40.7640893235,
-        "start station longitude":-73.910651207
-    },
-    {
-        "start station name":"5 St & Market St",
-        "start station latitude":40.6999974844,
-        "start station longitude":-73.9744012803
-    },
-    {
-        "start station name":"N 11 St & Kent Ave",
-        "start station latitude":40.7224818864,
-        "start station longitude":-73.9592193067
-    },
-    {
         "start station name":"W 64 St & Thelonious Monk Circle",
         "start station latitude":40.7751595343,
         "start station longitude":-73.9891869575
@@ -3673,11 +2008,6 @@
         "start station name":"Cliff St & Fulton St (Old)",
         "start station latitude":40.7083179437,
         "start station longitude":-74.0050408244
-    },
-    {
-        "start station name":"47 Ave & Skillman Ave",
-        "start station latitude":40.74375241,
-        "start station longitude":-73.9417648315
     },
     {
         "start station name":"Lexington Ave & E 26 St",
@@ -3705,39 +2035,9 @@
         "start station longitude":-73.9974018931
     },
     {
-        "start station name":"Division Av & Hooper St",
-        "start station latitude":40.706842031,
-        "start station longitude":-73.9544353965
-    },
-    {
-        "start station name":"Driggs Ave & N 9 St",
-        "start station latitude":40.7181696945,
-        "start station longitude":-73.9552013576
-    },
-    {
-        "start station name":"40 Ave & Crescent St",
-        "start station latitude":40.753599202,
-        "start station longitude":-73.9379560947
-    },
-    {
         "start station name":"E 11 St & Avenue B",
         "start station latitude":40.7274642069,
         "start station longitude":-73.9795041829
-    },
-    {
-        "start station name":"Wyckoff St & Bond St",
-        "start station latitude":40.684616539,
-        "start station longitude":-73.9872128516
-    },
-    {
-        "start station name":"31 St & Newtown Ave",
-        "start station latitude":40.76754878,
-        "start station longitude":-73.9209334552
-    },
-    {
-        "start station name":"Cadman Plaza E & Johnson St",
-        "start station latitude":40.6953172777,
-        "start station longitude":-73.9901572466
     },
     {
         "start station name":"7 Ave & Central Park South",
@@ -3748,21 +2048,6 @@
         "start station name":"2 Ave & E 72 St",
         "start station latitude":40.7687620293,
         "start station longitude":-73.9584079385
-    },
-    {
-        "start station name":"Center Blvd & 51 Ave",
-        "start station latitude":40.7433660803,
-        "start station longitude":-73.9596068859
-    },
-    {
-        "start station name":"Frost St & Meeker Ave",
-        "start station latitude":40.7176619708,
-        "start station longitude":-73.9488002658
-    },
-    {
-        "start station name":"Pierrepont St & Monroe Pl",
-        "start station latitude":40.6953569332,
-        "start station longitude":-73.9934402704
     },
     {
         "start station name":"Avenue C & E 18 St",
@@ -3780,11 +2065,6 @@
         "start station longitude":-73.986274
     },
     {
-        "start station name":"36 Ave & 31 St",
-        "start station latitude":40.7565127298,
-        "start station longitude":-73.9295748621
-    },
-    {
         "start station name":"6 Ave & Broome St",
         "start station latitude":40.7243083216,
         "start station longitude":-74.0047303587
@@ -3800,149 +2080,9 @@
         "start station longitude":-73.9788007736
     },
     {
-        "start station name":"DeKalb Ave & Franklin Ave",
-        "start station latitude":40.6906480708,
-        "start station longitude":-73.9574617893
-    },
-    {
-        "start station name":"White St & Moore St",
-        "start station latitude":40.704508,
-        "start station longitude":-73.9351
-    },
-    {
-        "start station name":"Stagg St & Morgan Ave",
-        "start station latitude":40.710681,
-        "start station longitude":-73.93372
-    },
-    {
-        "start station name":"George St & Wilson Ave",
-        "start station latitude":40.702997,
-        "start station longitude":-73.92997
-    },
-    {
-        "start station name":"Irving Ave & Jefferson St",
-        "start station latitude":40.70538,
-        "start station longitude":-73.92535
-    },
-    {
-        "start station name":"Willoughby Ave & Wyckoff Ave",
-        "start station latitude":40.705614,
-        "start station longitude":-73.92153
-    },
-    {
-        "start station name":"Cedar St & Myrtle Ave",
-        "start station latitude":40.697842,
-        "start station longitude":-73.926241
-    },
-    {
-        "start station name":"3 Ave & Carroll St",
-        "start station latitude":40.677027,
-        "start station longitude":-73.9865
-    },
-    {
-        "start station name":"Wyckoff Av & Jefferson St",
-        "start station latitude":40.707165,
-        "start station longitude":-73.923711
-    },
-    {
-        "start station name":"Bushwick Ave & McKibbin St",
-        "start station latitude":40.705517,
-        "start station longitude":-73.93936
-    },
-    {
-        "start station name":"Bushwick Ave & Stagg St",
-        "start station latitude":40.709897,
-        "start station longitude":-73.94008
-    },
-    {
-        "start station name":"Sharon St & Olive St",
-        "start station latitude":40.715353,
-        "start station longitude":-73.93856
-    },
-    {
-        "start station name":"Powers St & Olive St",
-        "start station latitude":40.71323,
-        "start station longitude":-73.93894
-    },
-    {
-        "start station name":"Waterbury St & Stagg St",
-        "start station latitude":40.71019,
-        "start station longitude":-73.93734
-    },
-    {
-        "start station name":"White St & Johnson Ave",
-        "start station latitude":40.707174,
-        "start station longitude":-73.93581
-    },
-    {
-        "start station name":"Central Ave & Flushing Ave",
-        "start station latitude":40.702831,
-        "start station longitude":-73.9333
-    },
-    {
-        "start station name":"McKibbin St & Bogart St",
-        "start station latitude":40.706237,
-        "start station longitude":-73.933871
-    },
-    {
-        "start station name":"Devoe St & Morgan Ave",
-        "start station latitude":40.713811,
-        "start station longitude":-73.93515
-    },
-    {
-        "start station name":"Knickerbocker Ave & Thames St",
-        "start station latitude":40.70539,
-        "start station longitude":-73.92976
-    },
-    {
-        "start station name":"Knickerbocker Ave & George St",
-        "start station latitude":40.704425,
-        "start station longitude":-73.92836
-    },
-    {
-        "start station name":"Suydam St & Knickerbocker Ave",
-        "start station latitude":40.702013,
-        "start station longitude":-73.923769
-    },
-    {
-        "start station name":"Central Ave & Starr Street",
-        "start station latitude":40.700003,
-        "start station longitude":-73.92834
-    },
-    {
-        "start station name":"Stockholm St & Wilson Ave",
-        "start station latitude":40.699304,
-        "start station longitude":-73.923044
-    },
-    {
-        "start station name":"Irving Ave & DeKalb Ave",
-        "start station latitude":40.7027,
-        "start station longitude":-73.92095
-    },
-    {
-        "start station name":"Hart St & Wyckoff Ave",
-        "start station latitude":40.704876,
-        "start station longitude":-73.919911
-    },
-    {
-        "start station name":"Greene Av & Myrtle Av",
-        "start station latitude":40.698568,
-        "start station longitude":-73.918877
-    },
-    {
-        "start station name":"Brooklyn Bridge Park - Pier 2",
-        "start station latitude":40.698458,
-        "start station longitude":-73.997178
-    },
-    {
         "start station name":"Cliff St & Fulton St",
         "start station latitude":40.70838,
         "start station longitude":-74.00495
-    },
-    {
-        "start station name":"Dock 72 Way & Market St",
-        "start station latitude":40.69985,
-        "start station longitude":-73.97141
     },
     {
         "start station name":"E 12 St & 4 Av",
@@ -3950,18 +2090,8 @@
         "start station longitude":-73.98974
     },
     {
-        "start station name":"Henry St & Middagh St",
-        "start station latitude":40.7003,
-        "start station longitude":-73.991581
-    },
-    {
         "start station name":"Stuyvesant Walk & 1 Av Loop",
         "start station latitude":40.7323397772,
         "start station longitude":-73.9789838344
-    },
-    {
-        "start station name":"10 St & 2 Ave",
-        "start station latitude":40.671907,
-        "start station longitude":-73.993612
     }
 ]
