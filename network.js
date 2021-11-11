@@ -23,23 +23,36 @@
   g.append("g")
     .attr("class", "axis axis--y");
 
-  d3.json("stations.json", function(data){
-    data.forEach(function(stat) {
-      console.log(stat["start station name"])
-    });
+  d3.json("combined.json", function(data){
+    console.log(data.links);
+    // data.forEach(function(stat) {
+    //   console.log(stat["start station name"])
+    //});
     
-    x.domain([d3.min(data, function (d) { return d["start station longitude"]; }), d3.max(data, function (d) { return d["start station longitude"]; })])
-    y.domain([d3.min(data, function (d) { return d["start station latitude"]; }), d3.max(data, function (d) { return d["start station latitude"]; })])
+    // TODO: add some wiggle room to the x and y axis
+    x.domain([d3.min(data.nodes, function (d) { return d["start station longitude"]; }), d3.max(data.nodes, function (d) { return d["start station longitude"]; })])
+    y.domain([d3.min(data.nodes, function (d) { return d["start station latitude"]; }), d3.max(data.nodes, function (d) { return d["start station latitude"]; })])
     x.range([0, width])
     y.range([height, 0])
 
-    var link = svg
+    var node = svg
     .selectAll("circle")
-    .data(data)
+    .data(data.nodes)
     .enter()
     .append("circle")
       .attr("cx", function(d) {return x(d["start station longitude"])})
       .attr("cy", function(d) {return y(d["start station latitude"])})
       .attr("r", 2)
       .attr("fill", "red")
+
+    var link = svg
+    .selectAll("line")
+    .data(data.links)
+    .enter()
+    .append("line")
+      .style("stroke", "#aaa")
+      .attr("x1", function(d) { return d["start station name"]})
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
   });
