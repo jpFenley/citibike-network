@@ -5,41 +5,50 @@
   <meta http-equiv="cache-control" content="no-cache"> 
   <meta http-equiv="expires" content="0"> 
   <meta http-equiv="pragma" content="no-cache">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 
   <body>
-    <h1>Citibike's Most Popular Rides</h1>
-
-    <!-- <div id="selectors">
-        <div id="slider">
-            <input type="range" id="k" name="k_rides"
-                    min="0" max="1000">
+    <div class="split left">
+      <div class="centered">
+        <h1>Citibike's Most Popular Rides</h1>
+        
+        <div id="selectors">
+          <div id="slider">
+            <input type="range" id="k" name="k_rides" value="200"
+                        min="0" max="1000">
+          </div>
             <label for="k_rides">Number of Rides</label>
-        </div>
+            <p> Showing the <span id="k_rides"></span> most common rides.</p>
 
-        <div, id="time_selection">
+          <form, id="time_selection">
             <p>Time of Day:</p>
-            <input type="radio" id="all_time" name="time" value="all_time">
+            <input type="radio" id="all_time" name="time" value="all_time" checked>
             <label for="all_time">All</label><br>
             <input type="radio" id="day" name="time" value="day">
             <label for="age2">Day</label><br>  
             <input type="radio" id="night" name="time" value="night">
             <label for="age3">Night</label><br><br>
-        </div>
+          </form>
 
-        <div, id="day_selection">
+          <form, id="day_selection">
             <p>Days:</p>
-            <input type="radio" id="all_time" name="days" value="all_days">
-            <label for="all_time">All</label><br>
-            <input type="radio" id="day" name="days" value="weekdays">
-            <label for="age2">Weekdays</label><br>  
-            <input type="radio" id="night" name="days" value="weekends">
-            <label for="age3">Weekends</label><br><br>
+            <input type="radio" id="all_days" name="days" value="all_days" checked>
+            <label for="all_days">All</label><br>
+            <input type="radio" id="weekdays" name="days" value="weekdays">
+            <label for="weekdays">Weekdays</label><br>  
+            <input type="radio" id="weekends" name="days" value="weekends">
+            <label for="weekends">Weekends</label><br><br>
+          </form>
         </div>
-    </div> -->
+      </div>
+    </div>
+    
+    <div class="split right">
+      <div class="centered">
+        <svg width="400px"; height="570px"; preserveAspectRatio="none"></svg>
+      </div>
+    </div>
 
-  
-    <svg width="400px"; height="450px"; preserveAspectRatio="none"></svg>
   </body>
 
 
