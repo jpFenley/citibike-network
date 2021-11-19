@@ -50,9 +50,11 @@ TODO:
   g.append("g")
     .attr("class", "axis axis--y");
 
+  var max_path = 1712;
   // Reads in JSON data and plots it
   d3.json("./Data/combined.json", function(data){
     console.log(data.links);
+    console.log(data.nodes);
     
     // Set domain and range of x and y axis for the graph
     // Minimum and maximum values are based on the minimum and maximum latitude/longitudes seen in data
@@ -72,7 +74,7 @@ TODO:
       .attr("y1", function(d) { return y(d["start station latitude"])})
       .attr("x2", function(d) { return x(d["end station longitude"])})
       .attr("y2", function(d) { return y(d["end station latitude"])})
-      .attr("opacity", function(d) {return 0.5 + d.Total/1712}) // scale line opacity based on total number of rides
+      .attr("opacity", function(d) {return 0.5 + d.Total/max_path}) // scale line opacity based on total number of rides
 
     // Adds station name on hover. This isn't working right now
     var text = svg.selectAll("text")
@@ -96,21 +98,48 @@ TODO:
         d3.select(this)
           .transition()
           .attr('r', 5);
-        div.transition()
-          .duration(50)
-          .style("opacity", 1);
-        text.style("opacity", 1);
+        // div.transition()
+        //   .duration(50)
+        //   .style("opacity", 1);
+        // text.style("opacity", 1);
+        link_hover(d['start station name']);
      })
       .on('mouseout', function(d, i) {
         d3.select(this)
           .transition()
           .attr('r', 2);
+          link_dehover();
       })
+
+
+    // Given a new value of k, update the graph to show top k lines
+    function link_hover(station_name) {
+      console.log("Selecting routes from " + station_name)
+
+      link // make not relevant lines invisible
+      .data(data.links)
+      .filter(function(d){var start = d['start station name'];
+                          var end = d['end station name'];
+                          return (start == station_name || end == station_name)})
+      .transition()
+      .attr("stroke-width", 5);
+
+    }
+
+    function link_dehover() {
+      link
+      .data(data.links)
+      .transition()
+      .attr("stroke-width", 1);
+    }
 
 
     // Given a new value of k, update the graph to show top k lines
     function updateK(k) {
       console.log("Changing k to " + k)
+
+      max_path = d3.max(data.links, function (d) { return (d[var_name + '_R'] < k ? d[var_name] : 0) });
+      console.log("Changed max path weight to " + max_path);
 
       link // make not relevant lines invisible
       .data(data.links)
@@ -120,7 +149,7 @@ TODO:
       link // make relevant lines visible
       .data(data.links)
       .filter(function(d){return d[var_name + '_R'] < k})
-      .attr("opacity", function(d) {return 0.5 + d.Total/1712})
+      .attr("opacity", function(d) {return 0.5 + d.Total/max_path})
     }
   
     updateK(200) // default value, start with 200 lines
