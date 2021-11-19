@@ -110,7 +110,7 @@ TODO:
 
     // Given a new value of k, update the graph to show top k lines
     function updateK(k) {
-      console.log(k)
+      console.log("Changing k to " + k)
 
       link // make not relevant lines invisible
       .data(data.links)
@@ -125,31 +125,17 @@ TODO:
   
     updateK(200) // default value, start with 200 lines
 
+    vars = [['Total', 'Weekday', 'Weekend'],
+            ['Day', 'Day Weekday', 'Day Weekend'],
+            ['Night', 'Night Weekday', 'Night Weekend']]
+
     // Update which variable is being used based on options selected with buttons
     function updateVar(time_var_index, day_var_index) {
-      if (time_var_index == 0 && day_var_index == 0) {
-        var_name = 'Total'
-      }else if (time_var_index == 0 && day_var_index == 1) {
-        var_name = 'Weekday'
-      }else if (time_var_index == 0 && day_var_index == 2) {
-        var_name = 'Weekend'
-      }else if (time_var_index == 1 && day_var_index == 0) {
-        var_name = "Day"
-      }else if (time_var_index == 1 && day_var_index == 1) {
-        var_name = "Day Weekday"
-      }else if (time_var_index == 1 && day_var_index == 2) {
-        var_name = "Day Weekend"
-      }else if (time_var_index == 2 && day_var_index == 0) {
-        var_name = "Night"
-      }else if (time_var_index == 2 && day_var_index == 1) {
-        var_name = "Night Weekday"
-      }else if (time_var_index == 2 && day_var_index == 2) {
-        var_name = "Night Weekend"
-      }
-      console.log(var_name)
+      var_name = vars[time_var_index][day_var_index]
+      console.log("Changing target variable to " + var_name)
       updateK(slider.value)
     }
-
+    
     // Listen to the slider. If new value is different from old value, update number of k lines
     d3.select("#k").on("change", function(d){
       selectedValue = this.value
@@ -158,27 +144,15 @@ TODO:
 
     // Listen to the time variable slider. If new value is different from old value, update which time variable is being used
     d3.selectAll("input[name='time']").on("change", function(){
-      console.log(this.value)
-      if (this.value == "all_time"){
-        time_var_index = 0
-      } else if (this.value == "day"){
-        time_var_index = 1
-      } else if (this.value == "night"){
-        time_var_index = 2
-      }
+      console.log("Changing time index to " + this.value)
+      time_var_index = this.value;
       updateVar(time_var_index, day_var_index)
     });
 
     // Listen to the day variable slider. If new value is different from old value, update which day variable is being used
     d3.selectAll("input[name='days']").on("change", function(){
-      console.log(this.value)
-      if (this.value == "all_days"){
-        day_var_index = 0
-      } else if (this.value == "weekdays"){
-        day_var_index = 1
-      } else if (this.value == "weekends"){
-        day_var_index = 2
-      }
+      console.log("Changing day index to" + this.value)
+      day_var_index = this.value;
       updateVar(time_var_index, day_var_index)
     });
 
