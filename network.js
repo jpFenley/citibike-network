@@ -8,16 +8,29 @@ slider.oninput = function() {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+TODO:
+- get map data onto map
+- create button to toggle map
+- have toggle button toggle map appearance
+- fix text field
+- have hovering on station show station name in text field
+- optimize cariable selection code using matrix of target variables
+- make CSS prettier
+- make plot size dependent on broswer size
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
   // Set data variable
   var svg = d3.select("svg"); // select the first element that matches the specified selector string
   var margin = { top: 5, right: 5, bottom: 5, left: 5 };
   
+  // Set what variables to start with
   var time_var_index = 0;
   var day_var_index = 0;
   var var_name = 'Total'
 
-  // set bounds for image part
+  // Set bounds for image part
   var bounds = svg.node().getBoundingClientRect(),
     width = bounds.width - margin.left - margin.right,
     height = bounds.height - margin.top - margin.bottom;
@@ -27,8 +40,8 @@ slider.oninput = function() {
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
 
   
-  var x = d3.scaleLinear()//.domain([-90, 90]).range([0, width]); // Distributes array of points into range interval
-  var y = d3.scaleLinear()//.domain([-90, 90]).range([height, 0]); //creates a scale with a linear relationship between input and output
+  var x = d3.scaleLinear() // Distributes array of points into range interval
+  var y = d3.scaleLinear() //Creates a scale with a linear relationship between input and output
   
   // Adds an element inside the selected element but just before the end of the selected element,
   // in this case the x-axis and y-axis, and text
@@ -37,15 +50,18 @@ slider.oninput = function() {
   g.append("g")
     .attr("class", "axis axis--y");
 
-  d3.json("combined.json", function(data){
+  // Reads in JSON data and plots it
+  d3.json("./Data/combined.json", function(data){
     console.log(data.links);
     
+    // Set domain and range of x and y axis for the graph
+    // Minimum and maximum values are based on the minimum and maximum latitude/longitudes seen in data
     x.domain([d3.min(data.nodes, function (d) { return d["start station longitude"]; }), d3.max(data.nodes, function (d) { return d["start station longitude"]; })])
     y.domain([ 40.6995, d3.max(data.nodes, function (d) { return d["start station latitude"]; }) + 0.0005])
     x.range([0, width])
-    y.range([height, 0])
+    y.range([height, 0]) // y-axis is inverted
 
-
+    // Adds line to graph. Use the links in the JSON data and get the lat/lon for the start and end of each line
     var link = svg
     .selectAll("line")
     .data(data.links)
@@ -56,8 +72,9 @@ slider.oninput = function() {
       .attr("y1", function(d) { return y(d["start station latitude"])})
       .attr("x2", function(d) { return x(d["end station longitude"])})
       .attr("y2", function(d) { return y(d["end station latitude"])})
-      .attr("opacity", function(d) {return 0.5 + d.Total/1712})
+      .attr("opacity", function(d) {return 0.5 + d.Total/1712}) // scale line opacity based on total number of rides
 
+    // Adds station name on hover. This isn't working right now
     var text = svg.selectAll("text")
     .enter().append("text")
     .attr("x", 8)
@@ -65,6 +82,7 @@ slider.oninput = function() {
     .attr("opacity", 1)
     .text("Station Name");
 
+    // Adds stations to map. Gets all node elements in json. 
     var node = svg
     .selectAll("circle")
     .data(data.nodes)
@@ -74,7 +92,7 @@ slider.oninput = function() {
       .attr("cy", function(d) {return y(d["start station latitude"])})
       .attr("r", 2)
       .attr("fill", "red")
-      .on('mouseover', function(d, i) {
+      .on('mouseover', function(d, i) { // on mouseover, make circle bigger. TODO: make this change text 
         d3.select(this)
           .transition()
           .attr('r', 5);
@@ -90,23 +108,24 @@ slider.oninput = function() {
       })
 
 
-
+    // Given a new value of k, update the graph to show top k lines
     function updateK(k) {
       console.log(k)
 
-      link
+      link // make not relevant lines invisible
       .data(data.links)
       .filter(function(d){return d[var_name + '_R'] >= k})
       .attr("opacity", 0)
 
-      link
+      link // make relevant lines visible
       .data(data.links)
       .filter(function(d){return d[var_name + '_R'] < k})
       .attr("opacity", function(d) {return 0.5 + d.Total/1712})
     }
   
-    updateK(200)
+    updateK(200) // default value, start with 200 lines
 
+    // Update which variable is being used based on options selected with buttons
     function updateVar(time_var_index, day_var_index) {
       if (time_var_index == 0 && day_var_index == 0) {
         var_name = 'Total'
@@ -131,12 +150,13 @@ slider.oninput = function() {
       updateK(slider.value)
     }
 
-    // Listen to the slider
+    // Listen to the slider. If new value is different from old value, update number of k lines
     d3.select("#k").on("change", function(d){
       selectedValue = this.value
       updateK(selectedValue)
     })
 
+    // Listen to the time variable slider. If new value is different from old value, update which time variable is being used
     d3.selectAll("input[name='time']").on("change", function(){
       console.log(this.value)
       if (this.value == "all_time"){
@@ -149,6 +169,7 @@ slider.oninput = function() {
       updateVar(time_var_index, day_var_index)
     });
 
+    // Listen to the day variable slider. If new value is different from old value, update which day variable is being used
     d3.selectAll("input[name='days']").on("change", function(){
       console.log(this.value)
       if (this.value == "all_days"){
