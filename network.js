@@ -38,7 +38,8 @@ TODO:
 
   let projection = d3.geoMercator()
     .scale(200000)
-    .center([-73.93, 40.765]); //-73.985487
+    .translate([width/2,height/2])
+    .center([-73.984513, 40.757261]); //40.757261, -73.984513
 
   let geoGenerator = d3.geoPath()
     .projection(projection);
