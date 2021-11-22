@@ -10,60 +10,51 @@ slider.oninput = function() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
 TODO:
-- get map data onto map
-- create button to toggle map
-- have toggle button toggle map appearance
 - fix text field
 - have hovering on station show station name in text field
-- optimize cariable selection code using matrix of target variables
 - make CSS prettier
-- make plot size dependent on broswer size
 */
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  
+
   // Set data variable
   var svg = d3.select("svg"); // select the first element that matches the specified selector string
-  // var margin = { top: 5, right: 5, bottom: 5, left: 5 };
   
-  // Set what variables to start with
+  // Initial variable values
   var time_var_index = 0;
   var day_var_index = 0;
   var var_name = 'Total'
   var map_visible = true;
+  var max_path = 1712;
 
   // Set bounds for image part
   var bounds = svg.node().getBoundingClientRect(),
-    width = bounds.width;// - margin.left;// - margin.right,
-    height = bounds.height;// - margin.top;// - margin.bottom;
+    width = bounds.width;
+    height = bounds.height;
 
   let projection = d3.geoMercator()
-    .scale(200000)
+    .scale(320 * height)
     .translate([width/2,height/2])
-    .center([-73.984513, 40.757261]); //40.757261, -73.984513
+    .center([-73.9884845, 40.7499]);
 
   let geoGenerator = d3.geoPath()
     .projection(projection);
 
-  // sets an attribute called transform which adds the left and top margin to any input
-  // var g = svg.append("g")
-  //   .attr("transform", "translate(" + margin.left + "," + margin.top + ")"); 
 
-  
-  // var x = d3.scaleLinear() // Distributes array of points into range interval
-  // var y = d3.scaleLinear() //Creates a scale with a linear relationship between input and output
-  
-  // Adds an element inside the selected element but just before the end of the selected element,
-  // in this case the x-axis and y-axis, and text
-  // g.append("g")
-  //   .attr("class", "axis axis--x");
-  // g.append("g")
-  //   .attr("class", "axis axis--y");
+  var div = d3.select("body").append("div")
+    .attr("class", "tooltip")				
+    .text("Hover over a station to find out more.")
+    .style("top", "25px")
+    .style("font-size", "25px")
+    .style("left", width + 20 + "px")
+    .style("width", 3 * width / 5 + "px");
 
-  var max_path = 1712;
   d3.json('bouroughs.geojson', function(geojson) {
   // Reads in JSON data and plots it
     d3.json("./Data/combined.json", function(data){
+      
       svg
+      .append("g")
+      .attr("class", "map")
       .selectAll('path')
       .data(geojson.features)
       .enter()
@@ -73,16 +64,11 @@ TODO:
 
     console.log(data.links);
     console.log(data.nodes);
-      
-    //   // Set domain and range of x and y axis for the graph
-    //   // Minimum and maximum values are based on the minimum and maximum latitude/longitudes seen in data
-    //   x.domain([d3.min(data.nodes, function (d) { return d["start station longitude"]; }), d3.max(data.nodes, function (d) { return d["start station longitude"]; })])
-    //   y.domain([ 40.6995, d3.max(data.nodes, function (d) { return d["start station latitude"]; }) + 0.0005])
-    //   x.range([0, width])
-    //   y.range([height, 0]) // y-axis is inverted
 
       // Adds line to graph. Use the links in the JSON data and get the lat/lon for the start and end of each line
       var link = svg
+      .append("g")
+      .attr("class", "links")
       .selectAll("line")
       .data(data.links)
       .enter()
@@ -95,16 +81,13 @@ TODO:
         .attr("opacity", function(d) {return 0.5 + d.Total/max_path}); // scale line opacity based on total number of rides
     
 
-    //   // Adds station name on hover. This isn't working right now
-    //   var text = svg.selectAll("text")
-    //   .enter().append("text")
-    //   .attr("x", 8)
-    //   .attr("y", ".31em")
-    //   .attr("opacity", 1)
-    //   .text("Station Name");
+      svg.selectAll("text")
 
-    //   // Adds stations to map. Gets all node elements in json. 
+
+      // Adds stations to map. Gets all node elements in json. 
       var node = svg
+      .append("g")	
+      .attr("class", "nodes")
       .selectAll("circle")
       .data(data.nodes)
       .enter()
@@ -117,19 +100,24 @@ TODO:
           d3.select(this)
             .transition()
             .attr('r', 5);
-          // div.transition()
-          //   .duration(50)
-          //   .style("opacity", 1);
-          // text.style("opacity", 1);
-          link_hover(d['start station name']);
+          div.html("<span style=\"font-size: 30px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")" + getNumRides(d['start station name']));
+          link_hover(d["start station name"]);
       })
         .on('mouseout', function(d, i) {
           d3.select(this)
             .transition()
             .attr('r', 2);
             link_dehover();
+            div.html("Hover over a station to find out more.");
         })
 
+      function getNumRides(station_name) {
+        var num_rides = link
+        .filter(function(d) {return d['start station name'] == station_name || d["end station name"] == station_name})
+        .filter(function (d) {return d[var_name + '_R'] < slider.value})
+        .size();	
+        return "<br/><b>Number of Rides in Top " + slider.value + " Rides: </b>" + num_rides;
+      }
 
       // Given a new value of k, update the graph to show top k lines
       function link_hover(station_name) {
@@ -161,6 +149,8 @@ TODO:
 
           d3.select('.right')
           .style('background-color', 'white');
+
+          div.style('color', 'black');
         } else {
           d3
           .selectAll('path')
@@ -168,6 +158,8 @@ TODO:
 
           d3.select('.right')
           .style('background-color', 'black');
+
+          div.style('color', 'white');
 
         }
       }
@@ -182,11 +174,13 @@ TODO:
         link // make not relevant lines invisible
         .data(data.links)
         .filter(function(d){return d[var_name + '_R'] >= k})
+        .transition()
         .attr("opacity", 0)
 
         link // make relevant lines visible
         .data(data.links)
         .filter(function(d){return d[var_name + '_R'] < k})
+        .transition()
         .attr("opacity", function(d) {return 0.5 + d.Total/max_path})
       }
     

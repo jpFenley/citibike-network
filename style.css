@@ -68,3 +68,14 @@
   body{
     margin-top : 0px;
   }
+
+  div.tooltip {	
+    position: absolute;			
+    text-align: left;			
+    width: 300px;					
+    height: 28px;					
+    padding: 2px;				
+    font: 16px sans-serif;		
+    border: 0px;			
+    pointer-events: none;		
+}
