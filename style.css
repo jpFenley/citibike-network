@@ -1,21 +1,13 @@
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
   /* Control the left side */
   .left {
     position: fixed;
+    text-align: center;
     width: 50%;
     height: 100%;
     left: 0;
     background-color: #0098e4;
-  }
+    justify-content: center;
+  } 
   
   /* Control the right side */
   .right {
@@ -26,16 +18,6 @@
     height: 100%;
     left:50%;
   }
-  
-  /* If you want the content centered horizontally and vertically */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
   
   #slider {
     width: 100%; /* Width of the outside container */
@@ -58,6 +40,9 @@
 
   h1 {
     font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin: auto;
   }
 
   * {
@@ -71,8 +56,7 @@
 
   div.tooltip {	
     position: absolute;			
-    text-align: left;			
-    width: 300px;					
+    text-align: left;							
     height: 28px;					
     padding: 2px;				
     font: 16px sans-serif;		

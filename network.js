@@ -44,7 +44,7 @@ TODO:
     .attr("class", "tooltip")				
     .text("Hover over a station to find out more.")
     .style("top", "25px")
-    .style("font-size", "25px")
+    .style("font-size", "20px")
     .style("left", width + 20 + "px")
     .style("width", 3 * width / 5 + "px");
 
@@ -100,7 +100,7 @@ TODO:
           d3.select(this)
             .transition()
             .attr('r', 5);
-          div.html("<span style=\"font-size: 30px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")" + getNumRides(d['start station name']));
+          div.html("<span style=\"font-size: 20px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><span style=\"font-size: 15px\"><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")" + getNumRides(d['start station name']) + "</span>");
           link_hover(d["start station name"]);
       })
         .on('mouseout', function(d, i) {
@@ -110,13 +110,14 @@ TODO:
             link_dehover();
             div.html("Hover over a station to find out more.");
         })
+        
 
       function getNumRides(station_name) {
         var num_rides = link
         .filter(function(d) {return d['start station name'] == station_name || d["end station name"] == station_name})
         .filter(function (d) {return d[var_name + '_R'] < slider.value})
         .size();	
-        return "<br/><b>Number of Rides in Top " + slider.value + " Rides: </b>" + num_rides;
+        return "<br/><b>Number of Rides in Top <u>" + slider.value + "</u> Rides: </b>" + num_rides;
       }
 
       // Given a new value of k, update the graph to show top k lines
