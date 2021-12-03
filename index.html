@@ -15,7 +15,7 @@
     <div class="left">
         <h1>Citibike's Most Popular Rides</h1>
         <div id="selectors">
-          <label for="k_rides">Number of Rides</label>
+          <label for="k_rides">Drag the slider to change the number of rides being shown.</label>
           <div id="slider">
             <input type="range" id="k" name="k_rides" value="200"
                         min="0" max="1000">
@@ -23,17 +23,19 @@
             <p> Showing the <span id="k_rides"></span> most common rides.</p>
 
           <form, id="time_selection">
-            <p>Time of Day:</p>
+            <p><b>Time of Day:</b></p>
             <input type="radio" id="all_time" name="time" value=0 checked>
             <label for="all_time">All</label><br>
-            <input type="radio" id="day" name="time" value=1>
-            <label for="age2">Day</label><br>  
-            <input type="radio" id="night" name="time" value=2>
-            <label for="age3">Night</label><br><br>
+            <input type="radio" id="morning" name="time" value=1>
+            <label for="morning">Morning (7AM-Noon)</label><br>  
+            <input type="radio" id="afternoon" name="time" value=2>
+            <label for="afternoon">Afternoon (Noon-8PM)</label><br>  
+            <input type="radio" id="night" name="time" value=3>
+            <label for="night">Night (8PM-9AM)</label><br><br>
           </form>
 
           <form, id="day_selection">
-            <p>Days:</p>
+            <p><b>Days:</b></p>
             <input type="radio" id="all_days" name="days" value=0 checked>
             <label for="all_days">All</label><br>
             <input type="radio" id="weekdays" name="days" value=1>
@@ -44,7 +46,7 @@
 
           <form, id='map_toggle'>
             <input type="checkbox" id="map_display" name="map_display" checked>
-            <label for="map_display">Show Map</label><br>
+            <label for="map_display"><b>Show Map</b></label><br>
           </form>
         </div>
       </div>
