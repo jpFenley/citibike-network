@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Load bootstrap -->
+
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="cache-control" content="no-cache"> 
@@ -7,15 +9,17 @@
   <link rel="stylesheet" href="style.css">
 
   <head>
-    <title>Citibike Tracker</title>
+    <title>NYC Citibike Tracker</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
 
   <body>
     <div class="left">
         <h1>Citibike's Most Popular Rides</h1>
-        <div id="selectors">
-          <label for="k_rides">Drag the slider to change the number of rides being shown.</label>
+        <h2>June 2019</h2>
+
+        <div class = "userOptions" id="selectors">
+          <label for="k_rides">Number of Rides</label>
           <div id="slider">
             <input type="range" id="k" name="k_rides" value="200"
                         min="0" max="1000">
@@ -23,19 +27,17 @@
             <p> Showing the <span id="k_rides"></span> most common rides.</p>
 
           <form, id="time_selection">
-            <p><b>Time of Day:</b></p>
+            <p>Time of Day:</p>
             <input type="radio" id="all_time" name="time" value=0 checked>
             <label for="all_time">All</label><br>
-            <input type="radio" id="morning" name="time" value=1>
-            <label for="morning">Morning (7AM-Noon)</label><br>  
-            <input type="radio" id="afternoon" name="time" value=2>
-            <label for="afternoon">Afternoon (Noon-8PM)</label><br>  
-            <input type="radio" id="night" name="time" value=3>
-            <label for="night">Night (8PM-9AM)</label><br><br>
+            <input type="radio" id="day" name="time" value=1>
+            <label for="age2">Day</label><br>  
+            <input type="radio" id="night" name="time" value=2>
+            <label for="age3">Night</label><br><br>
           </form>
 
           <form, id="day_selection">
-            <p><b>Days:</b></p>
+            <p>Days:</p>
             <input type="radio" id="all_days" name="days" value=0 checked>
             <label for="all_days">All</label><br>
             <input type="radio" id="weekdays" name="days" value=1>
@@ -43,18 +45,30 @@
             <input type="radio" id="weekends" name="days" value=2>
             <label for="weekends">Weekends</label><br><br>
           </form>
-
+        
           <form, id='map_toggle'>
             <input type="checkbox" id="map_display" name="map_display" checked>
-            <label for="map_display"><b>Show Map</b></label><br>
+            <label for="map_display">Show Map</label><br>
           </form>
         </div>
-        <br>
-        Citibike is New York City's bike share system, and is the largest in the United States. Due to its popularity, Citibike
-        has struggled to ... <br><br>
+        
+        <div class = "page1">
+          <p>Introduction, background information & purpose of visualization go here.
+            Readers should be able to understand it without looking elsewhere.
+          </p>
+        </div>
 
-        This visualization helps show the inbalance in Citibike rides at different times of day and days of the week. Use the buttons
-        and sliders to change what rides are being shown. 
+        <div class = 'page2'>
+          <p>Explanation of a certain pattern in the data? 
+            Or more background of the overall trend?</p>
+        </div>
+
+        <br><br>
+        <div class = 'pageButtons'>
+        <button id ='backButton' class = 'pageButton' type="button">Back</button>
+        <button id ='forwardButton' class = 'pageButton' type="button">Next Page</button>
+        <p id = "pageNumber">Page 1</p>
+        </div>
       </div>
     
     
