@@ -5,7 +5,7 @@
     width: 50%;
     height: 100%;
     left: 0;
-    background-color: #87CEEB;
+    background-color: #0098e4;
     justify-content: center;
   } 
   
@@ -20,14 +20,26 @@
   }
   
   .pageButton{
-    height:25px;
-    width:100px;
+      width: 130px;
+      height: 40px;
+      padding: 10px 25px;
+      border: 2px solid #000;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      
   }
-
-  /* .pageButtons {
-    position: fixed;
-    left:25%;
-  } */
+  .pageButton:hover {
+    box-shadow:
+    -7px -7px 20px 0px #0002,
+    -4px -4px 5px 0px #0002,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+ }
 
   #slider {
     width: 100%; /* Width of the outside container */
@@ -36,46 +48,62 @@
   #k {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
+    border-radius: 5px;
     width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
+    height: 10px; /* Specified height */
+    background: #ffffff;
+    fill: black;
     outline: none; /* Remove outline */
     opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
   }
 
-  #k {
+  #k:hover {
     opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  #k::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: black;
   }
 
   h1 {
     font-size: 36px;
     text-align: center;
-    margin-top: 10px;
-    margin: auto;
-  }
-
-  h2 {
-    font-size: 24px;
-    text-align: center;
-    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
   * {
     font-size: 100%;
-    font-family: Verdana, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
    }
 
   body{
     margin-top : 0px;
   }
 
-  div.tooltip {	
-    position: absolute;			
-    text-align: left;							
-    height: 28px;					
-    padding: 2px;				
-    font: 16px sans-serif;		
-    border: 0px;			
-    pointer-events: none;		
+div.tooltip {	
+  position: absolute;			
+  text-align: left;							
+  height: 28px;					
+  padding: 2px;				
+  font: 16px sans-serif;		
+  border: 0px;			
+  pointer-events: none;		
 }
+
+.page{
+  width: 80%;
+  margin: 0 auto;
+  height: 50%;
+  font-size: 20px;
+  margin-top: 10px;
+  display: none;
+}
+

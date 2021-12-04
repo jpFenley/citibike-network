@@ -15,29 +15,36 @@
 
   <body>
     <div class="left">
-        <h1>Citibike's Most Popular Rides</h1>
-        <h2>June 2019</h2>
+        <h1>Citi Bike's Most Popular Rides</h1>
 
-        <div class = "userOptions" id="selectors">
-          <label for="k_rides">Number of Rides</label>
+        <div class = 'pageButtons'>
+          <button id ='forwardButton' class = 'pageButton' type="button">Begin</button>
+          <p id = "pageNumber">Page 1/10</p>
+        </div>
+
+
+        <div class = "page" id="userOptions">
+          <label for="k_rides">Drag the slider to change the number of rides being shown.</label>
           <div id="slider">
             <input type="range" id="k" name="k_rides" value="200"
                         min="0" max="1000">
           </div>
             <p> Showing the <span id="k_rides"></span> most common rides.</p>
 
-          <form, id="time_selection">
-            <p>Time of Day:</p>
+          <form, id="time_selection", class='bullets'>
+            <p><b>Time of Day:</b></p>
             <input type="radio" id="all_time" name="time" value=0 checked>
             <label for="all_time">All</label><br>
-            <input type="radio" id="day" name="time" value=1>
-            <label for="age2">Day</label><br>  
-            <input type="radio" id="night" name="time" value=2>
-            <label for="age3">Night</label><br><br>
+            <input type="radio" id="morning" name="time" value=1>
+            <label for="morning">Morning (7AM-Noon)</label><br>  
+            <input type="radio" id="afternoon" name="time" value=2>
+            <label for="afternoon">Afternoon (Noon-8PM)</label><br>  
+            <input type="radio" id="night" name="time" value=3>
+            <label for="night">Night (8PM-9AM)</label><br><br>
           </form>
 
-          <form, id="day_selection">
-            <p>Days:</p>
+          <form, id="day_selection", class='bullets'>
+            <p><b>Days:</b></p>
             <input type="radio" id="all_days" name="days" value=0 checked>
             <label for="all_days">All</label><br>
             <input type="radio" id="weekdays" name="days" value=1>
@@ -52,23 +59,70 @@
           </form>
         </div>
         
-        <div class = "page1">
-          <p>Introduction, background information & purpose of visualization go here.
-            Readers should be able to understand it without looking elsewhere.
+        <div class="page" id = "page0">
+          <p>A breakdown of New York City's most popular rides on Citi bike. 
           </p>
         </div>
 
-        <div class = 'page2'>
-          <p>Explanation of a certain pattern in the data? 
-            Or more background of the overall trend?</p>
+        <div class="page" id = 'page1'>
+          <p>This is Manhattan. It is home to over <b>1.6 million</b> people.<br><br>In 2013
+          Citi Bike released its bikeshare program. The program has grown since, becoming the largest
+          in the United States, and the second largest in the world.</p>
         </div>
 
-        <br><br>
-        <div class = 'pageButtons'>
-        <button id ='backButton' class = 'pageButton' type="button">Back</button>
-        <button id ='forwardButton' class = 'pageButton' type="button">Next Page</button>
-        <p id = "pageNumber">Page 1</p>
+        <div class="page" id = 'page2'>
+          <p>There are currently <b>419</b> stations in Manhattan. <br><br>
+          There are around <b>12,000</b> bicycles across all these stations.</p>
         </div>
+
+        <div class="page" id = 'page3'>
+          <p>With <b>419</b> stations that means there are <b>175,142</b> possible rides.<br><br>
+          In June of 2019, we saw <b>109,674</b> of these possible ride combinations.<br><br><br>
+        However, some of these rides are way more popular than others.</p>
+        </div>
+
+        <div class="page" id = 'page4'>
+          <p>The <b>4</b> most common rides of all time occur at Governor's Island, between <b>Yankee Ferry Terminal</b>, <b>Soissons Landing</b>
+            , and <b>Picnic Point</b> stations.
+          </b></p>
+        </div>
+
+        <div class="page" id = 'page5'>
+          <p>During the <u>morning</u> we can see <b>Midtown</b> and the <b>Hudson Yards</b> being the most popular ride locations. These
+            happen to be some of the most common places to work in the city. <br><br>
+
+            Due to how popular certain stations and rides are at this time, many users encounter empty stations without bikes.
+            Citi Bike has been attempting to relocate bikes to match this demand, but the issue is still present.
+          </p>
+        </div>
+
+        <div class="page" id = 'page6'>
+          <p>During the <u>afternoon</u> <b>Central Park</b> is a common ride location. <br><br>
+            <b>Hudson yards</b> and <b>Midtown</b> are still popular routes, most likely caused by the same
+            morning commuters heading home.
+          </p>
+        </div>
+
+        <div class="page" id = 'page7'>
+          <p>At <u>night</u>, <b>Central Park</b> has practically no rides as it closes after 1am. <br><br>
+            <b>Chelsea</b> and the <b>East Village</b> are the most popular ride locations. These locations are
+            where a lot of nightlife and bars are located.
+          </p>
+        </div>
+
+        <div class="page" id = 'page8'>
+          <p>During <u>weekdays</u> the most popular routes are very similar to the most popular during the morning and afternoon commutes. 
+            It is mostly commuting to and from work at the <b>Hudson Yards</b> and <b>Midtown</b> stations.
+          </p>
+        </div>
+
+        <div class="page" id = 'page9'>
+          <p>During <u>weekends</u> almost all rides appear to be leisurely. The most common paths are along
+            the Hudson river in <b>Hudson Yards</b> and through <b>Central Park</b>. There is very limited
+            riding through the city itself. 
+          </p>
+        </div>
+
       </div>
     
     
