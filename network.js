@@ -42,9 +42,9 @@ slider.oninput = function() {
     .style("width", 3 * width / 5 + "px")
     .style("display", "none");
 
-  d3.json('bouroughs.geojson', function(geojson) {
+  d3.json('Data/Input/bouroughs.geojson', function(geojson) {
   // Reads in JSON data and plots it
-    d3.json("./combined.json", function(data){
+    d3.json("Data/Output/combined.json", function(data){
       
     console.log(data.links);
     console.log(data.nodes);
@@ -128,7 +128,7 @@ slider.oninput = function() {
       .filter(function(d) {return d['start station id'] == station_id || d["end station id"] == station_id})
       .filter(function (d) {return d[var_name + '_R'] < slider.value})
       .size();	
-      return "<br/><b>Number of Rides in Top <u>" + slider.value + "</u> Rides: </b>" + num_rides;
+      return "<br/>Station has <b>" + num_rides + "</b> of the top <b>" + slider.value + "</b> rides.";
     }
 
     // Given a new value of k, update the graph to show top k lines
