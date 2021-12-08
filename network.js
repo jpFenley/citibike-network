@@ -1,6 +1,6 @@
 ///////////////////////////////SECTION FOR WEBSITE (NOT d3)///////////////////////////////////////////////
 var slider = document.getElementById("k");
-var output = document.getElementById("k_rides");
+var output = document.getElementById("kRides");
 output.innerHTML = slider.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
@@ -11,11 +11,11 @@ slider.oninput = function() {
   var svg = d3.select("svg"); // select the first element that matches the specified selector string
   
   // Initial variable values
-  var time_var_index = 0;
-  var day_var_index = 0;
-  var var_name = 'Total'
-  var map_visible = true;
-  var max_path = 1712;
+  var timeVarIndex = 0;
+  var dayVarIndex = 0;
+  var varName = 'Total'
+  var mapVisible = true;
+  var maxPath = 1712;
   var page = 0;
   var k = 0;
 
@@ -90,72 +90,63 @@ slider.oninput = function() {
         d3.select(this)
           .transition()
           .attr('r', 5);
-        //div.html("<span style=\"font-size: 20px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><span style=\"font-size: 15px\"><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")" + getNumRides(d['start station name']) + "</span>");
-        //link_hover(d["start station id"]);
-        //adjacent_stations(d["start station id"]);
     })
       .on('mouseout', function(d, i) {
         d3.select(this)
           .transition()
           .attr('r', 2);
-          //link_dehover();
-          //div.html("Hover over a station to find out more.");
-        //node
-          //.attr("fill", "red");
       })
 
-      function adjacent_stations(station_id){
-        var adjacent_stations = [];
+      function adjacentStations(stationId){
+        var adjacentStations = [];
         for (var i = 0; i < data.links.length; i++){
-          if (data.links[i][var_name + '_R'] < k){
-            if (data.links[i]["start station id"] == station_id){
-              adjacent_stations.push(data.links[i]["end station id"]);
+          if (data.links[i][varName + '_R'] < k){
+            if (data.links[i]["start station id"] == stationId){
+              adjacentStations.push(data.links[i]["end station id"]);
             } 
-            if (data.links[i]["end station id"] == station_id){
-              adjacent_stations.push(data.links[i]["start station id"]);
+            if (data.links[i]["end station id"] == stationId){
+              adjacentStations.push(data.links[i]["start station id"]);
             }
           }
 
         }
         node
-        .filter(function(d) {return adjacent_stations.includes(d['start station id'])})
+        .filter(function(d) {return adjacentStations.includes(d['start station id'])})
         .attr("fill", "yellow");
-        console.log('Adjacent stations: ' + adjacent_stations);
+        console.log('Adjacent stations: ' + adjacentStations);
       }
 
-    function getNumRides(station_id) {
-      var num_rides = link
-      .filter(function(d) {return d['start station id'] == station_id || d["end station id"] == station_id})
-      .filter(function (d) {return d[var_name + '_R'] < slider.value})
+    function getNumRides(stationId) {
+      var numRides = link
+      .filter(function(d) {return d['start station id'] == stationId || d["end station id"] == stationId})
+      .filter(function (d) {return d[varName + '_R'] < slider.value})
       .size();	
-      return "<br/>Station has <b>" + num_rides + "</b> of the top <b>" + slider.value + "</b> rides.";
+      return "<br/>Station has <b>" + numRides + "</b> of the top <b>" + slider.value + "</b> rides.";
     }
 
     // Given a new value of k, update the graph to show top k lines
-    function link_hover(station_id) {
-      console.log("Selecting routes from " + station_id)
+    function linkHover(stationId) {
+      console.log("Selecting routes from " + stationId)
 
       link // make not relevant lines invisible
       .data(data.links)
       .filter(function(d){var start = d['start station name'];
                           var end = d['end station name'];
-                          return (start == station_id || end == station_id)})
+                          return (start == stationId || end == stationId)})
       .transition()
       .attr("stroke-width", 5);
 
     }
 
-    function link_dehover() {
+    function linkDehover() {
       link
       .data(data.links)
       .transition()
       .attr("stroke-width", 1);
     }
 
-    
-
     //Makes map appear and disappear
-    function toggle_map(bool){
+    function toggleMap(bool){
       if (bool){
         d3
         .selectAll('path')
@@ -179,24 +170,24 @@ slider.oninput = function() {
     }
 
     // Given a new value of k, update the graph to show top k lines
-    function updateK(new_k) {
-      k = new_k;
+    function updateK(newK) {
+      k = newK;
       console.log("Changing k to " + k)
 
-      max_path = d3.max(data.links, function (d) { return (d[var_name + '_R'] < k ? d[var_name] : 0) });
-      console.log("Changed max path weight to " + max_path);
+      maxPath = d3.max(data.links, function (d) { return (d[varName + '_R'] < k ? d[varName] : 0) });
+      console.log("Changed max path weight to " + maxPath);
 
       link // make not relevant lines invisible
       .data(data.links)
-      .filter(function(d){return d[var_name + '_R'] >= k})
+      .filter(function(d){return d[varName + '_R'] >= k})
       .transition()
       .attr("opacity", 0)
 
       link // make relevant lines visible
       .data(data.links)
-      .filter(function(d){return d[var_name + '_R'] < k})
+      .filter(function(d){return d[varName + '_R'] < k})
       .transition()
-      .attr("opacity", function(d) {return 0.5 + d.Total/max_path})
+      .attr("opacity", function(d) {return 0.5 + d.Total/maxPath})
     }
   
 
@@ -208,19 +199,8 @@ slider.oninput = function() {
 
 
     function hideClass(bool, String) {
-      // if (String == 'userOptions') {
-      //   if (bool) {
-      //     d3.selectAll('path')
-      //     .attr('opacity', 0);
-      //   } else {
-      //     d3.selectAll('path')
-      //     .attr('opacity', 1);
-      //   }
-      // }
-
       const element = d3.select('#'+String); // Or however you're deriving id
       const show = element.style('display') === 'none';
-      //d3.selectAll('.tooltip').style('display', 'none');
       if (bool) {
         element.style('display', 'none');
       } else if (show) {
@@ -287,8 +267,8 @@ slider.oninput = function() {
       updateK(4);
 
       link
-      .filter(function (d) {return d[var_name + '_R'] < 4})
-      .attr('opacity', function(d) {return 0.5 + d.Total/max_path})
+      .filter(function (d) {return d[varName + '_R'] < 4})
+      .attr('opacity', function(d) {return 0.5 + d.Total/maxPath})
 
       projection.scale(1000 * height).center([-74.02519246, 40.688633]);
       geoGenerator.projection(projection);
@@ -322,15 +302,15 @@ slider.oninput = function() {
           .transition()
           .attr('r', 15);
         div.html("<span style=\"font-size: 20px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><span style=\"font-size: 15px\"><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")");
-        link_hover(d["start station name"]);
-        adjacent_stations(d["start station id"]);
+        linkHover(d["start station name"]);
+        adjacentStations(d["start station id"]);
       })
       .on('mouseout', function(d, i) {
         d3.select(this)
           .transition()
           .attr('r', 5);
         div.html("Hover over a station to find out more.");
-        link_dehover();
+        linkDehover();
         node
         .attr("fill", "red");
       });
@@ -340,7 +320,7 @@ slider.oninput = function() {
       hideClass(false, 'page5');
       hideClass(true, 'page4');
 
-      var_name = 'Morning';
+      varName = 'Morning';
 
       updateK(400);
 
@@ -373,15 +353,15 @@ slider.oninput = function() {
           .transition()
           .attr('r', 5);
         div.html("<span style=\"font-size: 20px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><span style=\"font-size: 15px\"><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")");
-        link_hover(d["start station name"]);
-        adjacent_stations(d["start station id"]);
+        linkHover(d["start station name"]);
+        adjacentStations(d["start station id"]);
       })
       .on('mouseout', function(d, i) {
         d3.select(this)
           .transition()
           .attr('r', 2);
         div.html("Hover over a station to find out more.");
-        link_dehover();
+        linkDehover();
         node
         .attr("fill", "red");
       });
@@ -391,7 +371,7 @@ slider.oninput = function() {
       hideClass(false, 'page6');
       hideClass(true, 'page5');
 
-      var_name = 'Afternoon';
+      varName = 'Afternoon';
 
       updateK(k);
     }
@@ -400,7 +380,7 @@ slider.oninput = function() {
       hideClass(false, 'page7');
       hideClass(true, 'page6');
 
-      var_name = 'Night';
+      varName = 'Night';
       updateK(k);
     }
 
@@ -408,7 +388,7 @@ slider.oninput = function() {
       hideClass(false, 'page8');
       hideClass(true, 'page7');
 
-      var_name = 'Weekday';
+      varName = 'Weekday';
       updateK(k);
     }
 
@@ -416,16 +396,16 @@ slider.oninput = function() {
       hideClass(false, 'page9');
       hideClass(true, 'page8');
 
-      var_name = 'Weekend';
+      varName = 'Weekend';
       updateK(k);
     }
 
-    function user_contol_page(){
+    function userContolPage(){
       updateK(slider.value);
       hideClass(false, 'userOptions');
       hideClass(true, 'page9');
 
-      var_name = 'Total';
+      varName = 'Total';
 
       vars = [['Total', 'Weekday', 'Weekend'],
       ['Morning', 'Morning Weekday', 'Morning Weekend'],
@@ -433,9 +413,9 @@ slider.oninput = function() {
       ['Night', 'Night Weekday', 'Night Weekend']]
 
       // Update which variable is being used based on options selected with buttons
-      function updateVar(time_var_index, day_var_index) {
-      var_name = vars[time_var_index][day_var_index]
-      console.log("Changing target variable to " + var_name)
+      function updateVar(timeVarIndex, dayVarIndex) {
+      varName = vars[timeVarIndex][dayVarIndex]
+      console.log("Changing target variable to " + varName)
       updateK(slider.value)
       }
 
@@ -448,22 +428,22 @@ slider.oninput = function() {
       // Listen to the time variable slider. If new value is different from old value, update which time variable is being used
       d3.selectAll("input[name='time']").on("change", function(){
       console.log("Changing time index to " + this.value)
-      time_var_index = this.value;
-      updateVar(time_var_index, day_var_index)
+      timeVarIndex = this.value;
+      updateVar(timeVarIndex, dayVarIndex)
       });
 
       // Listen to the day variable slider. If new value is different from old value, update which day variable is being used
       d3.selectAll("input[name='days']").on("change", function(){
       console.log("Changing day index to" + this.value)
-      day_var_index = this.value;
-      updateVar(time_var_index, day_var_index)
+      dayVarIndex = this.value;
+      updateVar(timeVarIndex, dayVarIndex)
       });
 
       // Listen to the slider. If new value is different from old value, update number of  lines
       d3.select("#map_display").on("change", function(d){
-      map_visible = !map_visible;
-      console.log("Changing map to " + map_visible);
-      toggle_map(map_visible);
+      mapVisible = !mapVisible;
+      console.log("Changing map to " + mapVisible);
+      toggleMap(mapVisible);
       })
 
       node
@@ -472,26 +452,26 @@ slider.oninput = function() {
           .transition()
           .attr('r', 5);
           div.html("<span style=\"font-size: 20px\"><b>Start Station Name:</b> " + d['start station name'] + "</span><br/><span style=\"font-size: 15px\"><b>Location: </b>(" + d["start station longitude"].toFixed(3)+ ", " + d["start station latitude"].toFixed(3) + ")" + getNumRides(d['start station id']) + "</span>");
-          link_hover(d["start station name"]);
-        adjacent_stations(d["start station id"]);
+          linkHover(d["start station name"]);
+        adjacentStations(d["start station id"]);
       })
       .on('mouseout', function(d, i) {
         d3.select(this)
           .transition()
           .attr('r', 2);
         div.html("Hover over a station to find out more.");
-        link_dehover();
+        linkDehover();
         node
         .attr("fill", "red");
       });
     }
 
-      var page_calls = [page0, page1, page2, page3, page4, page5, page6, page7, page8, page9, user_contol_page]
-      var num_pages = page_calls.length;
+      var pageCalls = [page0, page1, page2, page3, page4, page5, page6, page7, page8, page9, userContolPage]
+      var numPages = pageCalls.length;
 
       d3.select("#forwardButton").on("click", function(d) {
         page++;
-        if (page >= num_pages) {
+        if (page >= numPages) {
           console.log("last page already reached." + page);
         } else {
           d3.select("#pageNumber")
@@ -499,9 +479,9 @@ slider.oninput = function() {
           d3.select('#forwardButton')
               .text( 'Next Page');
 
-          page_calls[page]();
+          pageCalls[page]();
 
-          if (page + 1 == num_pages){ // Hide on last page
+          if (page + 1 == numPages){ // Hide on last page
             d3.select('#forwardButton')
             .style('display', 'none');
             d3.select('#pageNumber')
