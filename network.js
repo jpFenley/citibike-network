@@ -404,18 +404,21 @@ slider.oninput = function() {
       updateK(slider.value);
       hideClass(false, 'userOptions');
       hideClass(true, 'page9');
-      hideClass(true, "page0");
-      hideClass(true, "page1");
-      hideClass(true, 'page2');
-      hideClass(true, 'page3');
-      hideClass(true, 'page4');
-      hideClass(true, 'page5');
-      hideClass(true, 'page6');
-      hideClass(true, 'page7');
       hideClass(true, 'page8');
+      hideClass(true, 'page7');
+      hideClass(true, 'page6');
+      hideClass(true, 'page5');
+      hideClass(true, 'page4');
+      hideClass(true, 'page3');
+      hideClass(true, 'page2');
+      hideClass(true, 'page1');
+      hideClass(true, 'page0');
+    
+      div.
+      style('display', 'block');
 
       varName = 'Total';
-
+    
       vars = [['Total', 'Weekday', 'Weekend'],
       ['Morning', 'Morning Weekday', 'Morning Weekend'],
       ['Afternoon', 'Afternoon Weekday', 'Afternoon Weekend'],
@@ -455,7 +458,21 @@ slider.oninput = function() {
       toggleMap(mapVisible);
       })
 
+
+      map.
+      attr('fill', 'black')
+      .attr("cx", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[0]})
+      .attr("cy", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[1]})
+      .attr("r", 2);
+
+      link
+      .attr("x1", function(d) { return projection([d["start station longitude"], d['start station latitude']])[0]})
+      .attr("y1", function(d) { return projection([d["start station longitude"], d['start station latitude']])[1]})
+      .attr("x2", function(d) { return projection([d["end station longitude"], d['end station latitude']])[0]})
+      .attr("y2", function(d) { return projection([d["end station longitude"], d['end station latitude']])[1]});
+
       node
+      .attr("opacity", 1) 
       .on('mouseover', function(d, i) { // on mouseover, make circle bigger and display text 
         d3.select(this)
           .transition()
@@ -473,17 +490,21 @@ slider.oninput = function() {
         node
         .attr("fill", "red");
       });
+
+      updateK(200);
     }
 
       var pageCalls = [page0, page1, page2, page3, page4, page5, page6, page7, page8, page9, userContolPage]
       var numPages = pageCalls.length;
 
       d3.select('#interactive').on("click", function(d) {
-        page = 10;
-        for (var i =0; i <page; i++) {
-          pageCalls[i]();
-          console.log("called " + i);
-        }
+        // page = 10;
+        // for (var i =0; i <page; i++) {
+        //   pageCalls[i]();
+        //   console.log("called " + i);
+        // }
+        page = 10
+        page5();
         pageCalls[page]();
         d3.select('#forwardButton')
         .style('display', 'none');
