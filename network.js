@@ -7,115 +7,121 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-  // Set data variable
-  var svg = d3.select("svg"); // select the first element that matches the specified selector string
-  
-  // Initial variable values
-  var timeVarIndex = 0;
-  var dayVarIndex = 0;
-  var varName = 'Total'
-  var mapVisible = true;
-  var maxPath = 1712;
-  var page = 0;
-  var k = 0;
+// Creaate SVG variable
+var svg = d3.select("svg"); // select the first element that matches the specified selector string
 
+// Initial variable values
+var timeVarIndex = 0;
+var dayVarIndex = 0;
+var varName = 'Total'
+var mapVisible = true;
+var maxPath = 1712;
+var page = 0;
+var k = 0;
 
-  // Set bounds for image part
-  var bounds = svg.node().getBoundingClientRect(),
-    width = bounds.width;
-    height = bounds.height;
+// Set bounds for image part
+var bounds = svg.node().getBoundingClientRect(),
+  width = bounds.width;
+  height = bounds.height;
 
-  let projection = d3.geoMercator()
-    .scale(320 * height)
-    .translate([width/2,height/2])
-    .center([-73.9884845, 40.7499]);
+// Create map projection
+let projection = d3.geoMercator()
+  .scale(320 * height)
+  .translate([width/2,height/2])
+  .center([-73.9884845, 40.7499]);
 
-  let geoGenerator = d3.geoPath()
-    .projection(projection);
+// Converts paths to be drawn on the map
+let geoGenerator = d3.geoPath()
+  .projection(projection);
 
-  var div = d3.select("body").append("div")
-    .attr("class", "tooltip")				
-    .text("Hover over a station to find out more.")
-    .style("top", "25px")
-    .style("font-size", "20px")
-    .style("left", width + 20 + "px")
-    .style("width", 3 * width / 5 + "px")
-    .style("display", "none");
+// Create text field. Hidden at first
+var div = d3.select("body").append("div")
+  .attr("class", "tooltip")				
+  .text("Hover over a station to find out more.")
+  .style("top", "25px")
+  .style("font-size", "20px")
+  .style("left", width + 20 + "px")
+  .style("width", 3 * width / 5 + "px")
+  .style("display", "none");
 
-  d3.json('Data/Input/bouroughs.geojson', function(geojson) {
-  // Reads in JSON data and plots it
-    d3.json("Data/Output/combined.json", function(data){
-      
-    console.log(data.links);
-    console.log(data.nodes);
+// Reads in geojson file and ride data
+d3.json('Data/Input/bouroughs.geojson', function(geojson) {
+  d3.json("Data/Output/combined.json", function(data){
 
+    //  Create map. Use geojson file to draw boroughs
     var map = svg
-    .append("g")
-    .attr("class", "map")
-    .selectAll('path')
-    .data(geojson.features)
-    .enter()
-      .append('path')
-      .attr('d', geoGenerator)
-      .attr('opacity', 1);
+      .append("g")
+      .attr("class", "map")
+      .selectAll('path')
+      .data(geojson.features)
+      .enter()
+        .append('path')
+        .attr('d', geoGenerator)
+        .attr('opacity', 1);
 
+    // Created edges between stations. These are hidden at first
     var link = svg
-    .append("g")
-    .attr("class", "links")
-    .selectAll("line")
-    .data(data.links)
-    .enter()
-    .append("line")
-      .style("stroke", "#aaa")
-      .attr("fill", 'red')
-      .attr("x1", function(d) { return projection([d["start station longitude"], d['start station latitude']])[0]})
-      .attr("y1", function(d) { return projection([d["start station longitude"], d['start station latitude']])[1]})
-      .attr("x2", function(d) { return projection([d["end station longitude"], d['end station latitude']])[0]})
-      .attr("y2", function(d) { return projection([d["end station longitude"], d['end station latitude']])[1]})
-      .attr("opacity", 0); // scale line opacity based on total number of rides
+      .append("g")
+      .attr("class", "links")
+      .selectAll("line")
+      .data(data.links)
+      .enter()
+      .append("line")
+        .style("stroke", "#aaa")
+        .attr("fill", 'red')
+        .attr("x1", function(d) { return projection([d["start station longitude"], d['start station latitude']])[0]})
+        .attr("y1", function(d) { return projection([d["start station longitude"], d['start station latitude']])[1]})
+        .attr("x2", function(d) { return projection([d["end station longitude"], d['end station latitude']])[0]})
+        .attr("y2", function(d) { return projection([d["end station longitude"], d['end station latitude']])[1]})
+        .attr("opacity", 0); // scale line opacity based on total number of rides
 
-    var node = svg
-    .append("g")	
-    .attr("class", "nodes")
-    .selectAll("circle")
-    .data(data.nodes)
-    .enter()
-    .append("circle")
-      .attr("cx", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[0]})
-      .attr("cy", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[1]})
-      .attr("r", 2)
-      .attr("fill", "red")
-      .attr('opacity', 0)
-      .on('mouseover', function(d, i) { // on mouseover, make circle bigger and display text 
-        d3.select(this)
-          .transition()
-          .attr('r', 5);
-    })
-      .on('mouseout', function(d, i) {
-        d3.select(this)
-          .transition()
-          .attr('r', 2);
-      })
+    // Create circles for stations. These are hidden at first
+      var node = svg
+        .append("g")	
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(data.nodes)
+        .enter()
+        .append("circle")
+          .attr("cx", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[0]})
+          .attr("cy", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[1]})
+          .attr("r", 2)
+          .attr("fill", "red")
+          .attr('opacity', 0)
+          .on('mouseover', function(d, i) { // on mouseover, make circle bigger and display text 
+            d3.select(this)
+              .transition()
+              .attr('r', 5);
+          })
+          .on('mouseout', function(d, i) {
+            d3.select(this)
+              .transition()
+              .attr('r', 2);
+          })
 
-      function adjacentStations(stationId){
-        var adjacentStations = [];
-        for (var i = 0; i < data.links.length; i++){
-          if (data.links[i][varName + '_R'] < k){
-            if (data.links[i]["start station id"] == stationId){
-              adjacentStations.push(data.links[i]["end station id"]);
-            } 
-            if (data.links[i]["end station id"] == stationId){
-              adjacentStations.push(data.links[i]["start station id"]);
-            }
+    // Given a station ID, find the stations that are connected to it
+    // when only considering the k top rides. Set the adjacnet stations to be 
+    // yellow.
+    function adjacentStations(stationId){
+      var adjacentStations = [];
+      for (var i = 0; i < data.links.length; i++){
+        if (data.links[i][varName + '_R'] < k){
+          if (data.links[i]["start station id"] == stationId){
+            adjacentStations.push(data.links[i]["end station id"]);
+          } 
+          if (data.links[i]["end station id"] == stationId){
+            adjacentStations.push(data.links[i]["start station id"]);
           }
-
         }
-        node
-        .filter(function(d) {return adjacentStations.includes(d['start station id'])})
-        .attr("fill", "yellow");
-        console.log('Adjacent stations: ' + adjacentStations);
-      }
 
+      }
+      node
+      .filter(function(d) {return adjacentStations.includes(d['start station id'])})
+      .attr("fill", "yellow");
+    }
+
+    // Given a station ID, find the number of stations that are connected to it
+    // when only considering the k top rides.
     function getNumRides(stationId) {
       var numRides = link
       .filter(function(d) {return d['start station id'] == stationId || d["end station id"] == stationId})
@@ -124,10 +130,8 @@ slider.oninput = function() {
       return "<br/>Station has <b>" + numRides + "</b> of the top <b>" + slider.value + "</b> rides.";
     }
 
-    // Given a new value of k, update the graph to show top k lines
+    // When hovering over a station, set the paths to adjacent stations to be wider
     function linkHover(stationId) {
-      console.log("Selecting routes from " + stationId)
-
       link // make not relevant lines invisible
       .data(data.links)
       .filter(function(d){var start = d['start station name'];
@@ -135,9 +139,9 @@ slider.oninput = function() {
                           return (start == stationId || end == stationId)})
       .transition()
       .attr("stroke-width", 5);
-
     }
 
+    // Reset all edges to be of same width
     function linkDehover() {
       link
       .data(data.links)
@@ -165,7 +169,6 @@ slider.oninput = function() {
         .style('background-color', 'black');
 
         div.style('color', 'white');
-
       }
     }
 
@@ -197,7 +200,7 @@ slider.oninput = function() {
             ['Night', 'Night Weekday', 'Night Weekend']]
 
 
-
+    // Hide a class
     function hideClass(bool, String) {
       const element = d3.select('#'+String); // Or however you're deriving id
       const show = element.style('display') === 'none';
@@ -426,41 +429,41 @@ slider.oninput = function() {
 
       // Update which variable is being used based on options selected with buttons
       function updateVar(timeVarIndex, dayVarIndex) {
-      varName = vars[timeVarIndex][dayVarIndex]
-      console.log("Changing target variable to " + varName)
-      updateK(slider.value)
+        varName = vars[timeVarIndex][dayVarIndex]
+        console.log("Changing target variable to " + varName)
+        updateK(slider.value)
       }
 
       // Listen to the slider. If new value is different from old value, update number of k lines
       d3.select("#k").on("change", function(d){
-      selectedValue = this.value
-      updateK(selectedValue)
+        selectedValue = this.value
+        updateK(selectedValue)
       })
 
       // Listen to the time variable slider. If new value is different from old value, update which time variable is being used
       d3.selectAll("input[name='time']").on("change", function(){
-      console.log("Changing time index to " + this.value)
-      timeVarIndex = this.value;
-      updateVar(timeVarIndex, dayVarIndex)
+        console.log("Changing time index to " + this.value)
+        timeVarIndex = this.value;
+        updateVar(timeVarIndex, dayVarIndex)
       });
 
       // Listen to the day variable slider. If new value is different from old value, update which day variable is being used
       d3.selectAll("input[name='days']").on("change", function(){
-      console.log("Changing day index to" + this.value)
-      dayVarIndex = this.value;
-      updateVar(timeVarIndex, dayVarIndex)
+        console.log("Changing day index to" + this.value)
+        dayVarIndex = this.value;
+        updateVar(timeVarIndex, dayVarIndex)
       });
 
       // Listen to the slider. If new value is different from old value, update number of  lines
       d3.select("#map_display").on("change", function(d){
-      mapVisible = !mapVisible;
-      console.log("Changing map to " + mapVisible);
-      toggleMap(mapVisible);
+        mapVisible = !mapVisible;
+        console.log("Changing map to " + mapVisible);
+        toggleMap(mapVisible);
       })
 
 
-      map.
-      attr('fill', 'black')
+      map
+      .attr('fill', 'black')
       .attr("cx", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[0]})
       .attr("cy", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[1]})
       .attr("r", 2);
@@ -497,12 +500,8 @@ slider.oninput = function() {
       var pageCalls = [page0, page1, page2, page3, page4, page5, page6, page7, page8, page9, userContolPage]
       var numPages = pageCalls.length;
 
+      // If the user jumps to interactive page, update necessary components
       d3.select('#interactive').on("click", function(d) {
-        // page = 10;
-        // for (var i =0; i <page; i++) {
-        //   pageCalls[i]();
-        //   console.log("called " + i);
-        // }
         page = 10
         page5();
         pageCalls[page]();
@@ -516,6 +515,7 @@ slider.oninput = function() {
         .style('display', 'inline-block');
       })
 
+      // Handle changing to next page
       d3.select("#forwardButton").on("click", function(d) {
         page++;
         d3.select('#reload')
