@@ -404,6 +404,15 @@ slider.oninput = function() {
       updateK(slider.value);
       hideClass(false, 'userOptions');
       hideClass(true, 'page9');
+      hideClass(true, "page0");
+      hideClass(true, "page1");
+      hideClass(true, 'page2');
+      hideClass(true, 'page3');
+      hideClass(true, 'page4');
+      hideClass(true, 'page5');
+      hideClass(true, 'page6');
+      hideClass(true, 'page7');
+      hideClass(true, 'page8');
 
       varName = 'Total';
 
@@ -469,8 +478,27 @@ slider.oninput = function() {
       var pageCalls = [page0, page1, page2, page3, page4, page5, page6, page7, page8, page9, userContolPage]
       var numPages = pageCalls.length;
 
+      d3.select('#interactive').on("click", function(d) {
+        page = 10;
+        for (var i =0; i <page; i++) {
+          pageCalls[i]();
+          console.log("called " + i);
+        }
+        pageCalls[page]();
+        d3.select('#forwardButton')
+        .style('display', 'none');
+        d3.select('#pageNumber')
+        .style('display', 'none');
+        d3.select('#interactive')
+        .style('display', 'none');
+        d3.select('#reload')
+        .style('display', 'inline-block');
+      })
+
       d3.select("#forwardButton").on("click", function(d) {
         page++;
+        d3.select('#reload')
+        .style("display", 'inline-block');
         if (page >= numPages) {
           console.log("last page already reached." + page);
         } else {
@@ -485,6 +513,8 @@ slider.oninput = function() {
             d3.select('#forwardButton')
             .style('display', 'none');
             d3.select('#pageNumber')
+            .style('display', 'none');
+            d3.select('#interactive')
             .style('display', 'none');
           }
         }
