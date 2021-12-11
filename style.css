@@ -31,14 +31,62 @@
       transition: all 0.3s ease;
       position: relative;
       display: inline-block;
+      justify-content: center;
       
   }
+
+  .interactiveButtons {
+   position:absolute;
+   bottom: 15px;
+   margin-left: 2%;
+   text-align: center;
+  }
+
+  #reload {
+    display: none;
+  }
+
+  #interactive {
+    display: inline-block;
+  } 
+
+  .interactiveButton {
+    width: 115px;
+    height: 25Spx;
+    padding: 2px 2px;
+    border: 1.8px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 78%;
+    font-weight: 400;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: auto;
+  }
+  .interactiveButton:hover {
+    box-shadow:
+    -7px -7px 18px 0px #0002,
+    -4px -4px 3px 0px #0002,
+    7px 7px 18px 0px #0002,
+    4px 4px 3px 0px #0001;
+ }
+
   .pageButton:hover {
     box-shadow:
     -7px -7px 20px 0px #0002,
     -4px -4px 5px 0px #0002,
     7px 7px 20px 0px #0002,
     4px 4px 5px 0px #0001;
+ }
+ .overview {
+   font-size: 18px;
+   /* text-align: left; */
+   width: 100%;
+ }
+
+ .authors {
+   font-size: 14px;
  }
 
   #slider {

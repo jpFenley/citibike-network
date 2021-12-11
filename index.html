@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
 
   <head>
-    <title>NYC Citibike Tracker</title>
+    <title>NYC Citi Bike Tracker</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
 
@@ -22,7 +22,11 @@
           <p id = "pageNumber">Page 1/10</p>
         </div>
 
-
+        <div class = 'interactiveButtons'>
+          <button id = 'reload' class = 'interactiveButton' onClick="window.location.reload();">Back to Beginning</button>
+          <button id = 'interactive' class = 'interactiveButton' type = 'button'>Jump to Interactive</button>
+        </div>
+        
         <div class = "page" id="userOptions">
           <label for="kRides">Drag the slider to change the number of rides being shown.</label>
           <div id="slider">
@@ -60,8 +64,18 @@
         </div>
         
         <div class="page" id = "page0">
-          <p>A breakdown of New York City's most popular rides on Citi bike. 
+          <p class = 'overview'>New York City is home to the nation's largest bike share program, Citi Bike.
+            Citi Bike collects and shares data on each ride, including the station and time that each ride 
+            started and ended. Finding trends in this data to identify popular routes based 
+            on the time of day and day of the week can help Citi Bike riders determine which routes to take 
+            and help Citi Bike determine how their bikes should be allocated.</p>
+          <p class = 'overview'>This interactive tool explores the trends in Manhattan's rides on Citi Bike in June 2019. Step through 
+            a guided exploration of these rides by pressing the "Begin" button above. For a self-guided exploration,
+            press the "Jump to Interactive" button in the bottom left at any time.
           </p>
+          <br>
+          <p class = 'authors'>Created by Jake Fenley, Mikayla Lamping, Luke Lochner, and Abhishek Grewal
+          <br>UW-Madison CS639 (Data Visualization) Students</p>
         </div>
 
         <div class="page" id = 'page1'>
@@ -82,8 +96,8 @@
         </div>
 
         <div class="page" id = 'page4'>
-          <p>The <b>4</b> most common rides of all time occur at Governor's Island, between <b>Yankee Ferry Terminal</b>, <b>Soissons Landing</b>
-            , and <b>Picnic Point</b> stations. <br><br>
+          <p>The <b>4</b> most common rides of all time occur at Governor's Island, between <b>Yankee Ferry Terminal</b>, <b>Soissons Landing</b>,
+            and <b>Picnic Point</b> stations. <br><br>
 
             The reason there only appears to be two rides shown is because the rides go to and from the same station.
           </b></p>
@@ -126,7 +140,7 @@
         </div>
 
       </div>
-    
+      
     
     <div class="right">
         <svg width="100%"; height="100%"; preserveAspectRatio="none"></svg>
