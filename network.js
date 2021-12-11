@@ -200,17 +200,18 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
             ['Night', 'Night Weekday', 'Night Weekend']]
 
 
-    // Hide a class
+    // Hide a class to change pages
     function hideClass(bool, String) {
       const element = d3.select('#'+String); // Or however you're deriving id
       const show = element.style('display') === 'none';
-      if (bool) {
+      if (bool) { // hide the class
         element.style('display', 'none');
-      } else if (show) {
+      } else if (show) { // display the class
         element.style('display', 'block')
       }
     }
 
+    // Home page - introduction to the data and visualization
     if (page == 0) {
       page0();
     }
@@ -229,6 +230,8 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       hideClass(true, 'page9');
     }
 
+    // Hides the home page and shows the first page
+    // Colors map of Manhattan red for emphasis
     function page1() {
       hideClass(true, 'page0');
       hideClass(false, 'page1');
@@ -238,6 +241,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       .attr('fill', 'red');
     }
 
+    // Displays the Citi Bike stations in Manhattan as red dots
     function page2() {
       hideClass(false, 'page2');
       hideClass(true, 'page1');
@@ -251,6 +255,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
         .attr('opacity', 1)
     }
 
+    // Displays popular routes in June 2019
     function page3(){
       hideClass(false, 'page3');
       hideClass(true, 'page2');
@@ -259,6 +264,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       .attr('opacity', 0.2);
     }
 
+    // Shows 4 most popular rides in Manhattan
     // Zoom in on Governors Island. Change projection. Show text.
     function page4(){
       hideClass(false, 'page4');
@@ -319,6 +325,8 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       });
     }
     
+    // Changes scale back to original (to show all of Manhattan again)
+    // Displays 400 most popular rides in the morning
     function page5(){
       hideClass(false, 'page5');
       hideClass(true, 'page4');
@@ -370,6 +378,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       });
     }
 
+    // Displays the most popular rides in the afternoon
     function page6(){
       hideClass(false, 'page6');
       hideClass(true, 'page5');
@@ -379,6 +388,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       updateK(k);
     }
 
+    // Displays most popular rides at night
     function page7(){
       hideClass(false, 'page7');
       hideClass(true, 'page6');
@@ -387,6 +397,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       updateK(k);
     }
 
+    // Displays the most popular rides during the week
     function page8(){
       hideClass(false, 'page8');
       hideClass(true, 'page7');
@@ -395,6 +406,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       updateK(k);
     }
 
+    // Displays most popular rides during the weekend
     function page9(){
       hideClass(false, 'page9');
       hideClass(true, 'page8');
@@ -403,6 +415,9 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
       updateK(k);
     }
 
+    // Self-guided exploration
+    // User is able to control how many rides are shown, time of day,
+    // what part of the week, and can toggle the background map on/off.
     function userContolPage(){
       updateK(slider.value);
       hideClass(false, 'userOptions');
@@ -530,7 +545,7 @@ d3.json('Data/Input/bouroughs.geojson', function(geojson) {
 
           pageCalls[page]();
 
-          if (page + 1 == numPages){ // Hide on last page
+          if (page + 1 == numPages){ // Hide page button on last page
             d3.select('#forwardButton')
             .style('display', 'none');
             d3.select('#pageNumber')
