@@ -19,7 +19,6 @@ slider.oninput = function() {
   var page = 0;
   var k = 0;
 
-
   // Set bounds for image part
   var bounds = svg.node().getBoundingClientRect(),
     width = bounds.width;
@@ -97,6 +96,7 @@ slider.oninput = function() {
           .attr('r', 2);
       })
 
+      // Finds stations adjacent to the given station
       function adjacentStations(stationId){
         var adjacentStations = [];
         for (var i = 0; i < data.links.length; i++){
@@ -116,6 +116,7 @@ slider.oninput = function() {
         console.log('Adjacent stations: ' + adjacentStations);
       }
 
+    // Determines the number of rides for a given station
     function getNumRides(stationId) {
       var numRides = link
       .filter(function(d) {return d['start station id'] == stationId || d["end station id"] == stationId})
@@ -138,6 +139,7 @@ slider.oninput = function() {
 
     }
 
+    // Returns links between stations to their original width after hover
     function linkDehover() {
       link
       .data(data.links)
@@ -197,17 +199,18 @@ slider.oninput = function() {
             ['Night', 'Night Weekday', 'Night Weekend']]
 
 
-
+    // Shows or hides elements of a class to change pages
     function hideClass(bool, String) {
       const element = d3.select('#'+String); // Or however you're deriving id
       const show = element.style('display') === 'none';
-      if (bool) {
+      if (bool) { // want to hide the class
         element.style('display', 'none');
-      } else if (show) {
+      } else if (show) { // class already hidden and want to show again
         element.style('display', 'block')
       }
     }
 
+    // Home page - introduction to the data and visualization
     if (page == 0) {
       page0();
     }
@@ -226,6 +229,8 @@ slider.oninput = function() {
       hideClass(true, 'page9');
     }
 
+    // Hides the home page and shows the first page
+    // Colors map of Manhattan red for emphasis
     function page1() {
       hideClass(true, 'page0');
       hideClass(false, 'page1');
@@ -235,6 +240,7 @@ slider.oninput = function() {
       .attr('fill', 'red');
     }
 
+    // Displays the Citi Bike stations in Manhattan
     function page2() {
       hideClass(false, 'page2');
       hideClass(true, 'page1');
@@ -248,6 +254,7 @@ slider.oninput = function() {
         .attr('opacity', 1)
     }
 
+    // Displays popular routes in June 2019
     function page3(){
       hideClass(false, 'page3');
       hideClass(true, 'page2');
@@ -256,6 +263,7 @@ slider.oninput = function() {
       .attr('opacity', 0.2);
     }
 
+    // Shows 4 most popular rides in Manhattan
     // Zoom in on Governors Island. Change projection. Show text.
     function page4(){
       hideClass(false, 'page4');
@@ -316,6 +324,8 @@ slider.oninput = function() {
       });
     }
     
+    // Changes scale back to original (to show all of Manhattan again)
+    // Displays 400 most popular rides in the morning
     function page5(){
       hideClass(false, 'page5');
       hideClass(true, 'page4');
@@ -367,6 +377,7 @@ slider.oninput = function() {
       });
     }
 
+    // Displays the most popular rides in the afternoon
     function page6(){
       hideClass(false, 'page6');
       hideClass(true, 'page5');
@@ -376,6 +387,7 @@ slider.oninput = function() {
       updateK(k);
     }
 
+    // Displays most popular rides at night
     function page7(){
       hideClass(false, 'page7');
       hideClass(true, 'page6');
@@ -384,6 +396,7 @@ slider.oninput = function() {
       updateK(k);
     }
 
+    // Displays the most popular rides at any time of day during the week
     function page8(){
       hideClass(false, 'page8');
       hideClass(true, 'page7');
@@ -392,6 +405,7 @@ slider.oninput = function() {
       updateK(k);
     }
 
+    // Displays most popular rides at any time of day during the weekend
     function page9(){
       hideClass(false, 'page9');
       hideClass(true, 'page8');
@@ -400,10 +414,13 @@ slider.oninput = function() {
       updateK(k);
     }
 
+    // Self-guided exploration
+    // User is able to control how many rides are shown, time of day,
+    // what part of the week, and can toggle the background map on/off.
     function userContolPage(){
       updateK(slider.value);
       hideClass(false, 'userOptions');
-      hideClass(true, 'page9');
+      hideClass(true, 'page9'); // hide previous pages 
       hideClass(true, 'page8');
       hideClass(true, 'page7');
       hideClass(true, 'page6');
@@ -414,6 +431,7 @@ slider.oninput = function() {
       hideClass(true, 'page1');
       hideClass(true, 'page0');
     
+      // Show text for hover
       div.
       style('display', 'block');
 
@@ -458,7 +476,6 @@ slider.oninput = function() {
       toggleMap(mapVisible);
       })
 
-
       map.
       attr('fill', 'black')
       .attr("cx", function(d) {return projection([d["start station longitude"], d["start station latitude"]])[0]})
@@ -497,12 +514,9 @@ slider.oninput = function() {
       var pageCalls = [page0, page1, page2, page3, page4, page5, page6, page7, page8, page9, userContolPage]
       var numPages = pageCalls.length;
 
+      // controls the "Jump to Interactive" button
+      // Updates page to 10 and hides page buttons
       d3.select('#interactive').on("click", function(d) {
-        // page = 10;
-        // for (var i =0; i <page; i++) {
-        //   pageCalls[i]();
-        //   console.log("called " + i);
-        // }
         page = 10
         page5();
         pageCalls[page]();
@@ -516,6 +530,8 @@ slider.oninput = function() {
         .style('display', 'inline-block');
       })
 
+      // Controls "Next Page" button
+      // Updates the page number and calls corresponding page function
       d3.select("#forwardButton").on("click", function(d) {
         page++;
         d3.select('#reload')
@@ -530,7 +546,7 @@ slider.oninput = function() {
 
           pageCalls[page]();
 
-          if (page + 1 == numPages){ // Hide on last page
+          if (page + 1 == numPages){ // Hide next page button on last page
             d3.select('#forwardButton')
             .style('display', 'none');
             d3.select('#pageNumber')
